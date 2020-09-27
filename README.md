@@ -25,45 +25,59 @@ We can use this panel in all CodeIgniter projects. It can adapt to any kind of p
 
 ### Features
 * Login (All roles)
+
 ![4.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519642591/hkzknmouyqnt7ravh9bs.png)
 
 * Logout (All roles)
+
 ![5.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519642703/ztb6tolajpcqtbusxwgd.png)
 
 * Admin Panel (Admin)
+
 ![8.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519643143/u6f6gym4agss35khgkoi.png)
 
 * Change Password (All roles)
+
 ![6.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519642862/v1g1iarvu011mdt0sknq.png)
 
 * Last login date and time (All roles)
+
 ![7.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519642968/is4gogl6jjnqsl9zwtcn.png)
 
 * Dashboard (All roles) (Number of tasks,finished tasks,users,logs)
+
 ![8.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519643143/u6f6gym4agss35khgkoi.png)
 
 * Access Denied Page (Manager/Employee)
+
 ![9.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519643437/jciy5jug7hpghqfpalb0.png)
 
 * Tasks / Add Task / Edit Task / Delete Task / Task Completion (Admin or Manager)
+
 ![10.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519643657/i8xwgkhxcu6gwyfwqxqj.png)
 
 * Users / Add User / Edit User / Delete User / User Logs (Admin)
+
 ![11.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519643818/py9sjzobuf07qlak6a2l.png)
 
 * Log History  / Log History  Export (backup) and Delete (Admin)
+
 ![12.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519643985/ym2rqrka79eyydscfgcu.png)
 
 * Log History  Import / Log History Control  (Admin)
+
 ![13.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519644138/z76grflkxe4y2rp7cgpg.png)
 
 * Manager Panel (Manager)
+
 ![14.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519644277/msi4pjyrbvbrzpphobou.png)
 
 * Employee Panel (Employee)
+
 ![15.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519644421/c4dwvjbrnv9ac7vrkfaf.png)
 
 * Employee Tasks (Only task completion)
+
 ![16.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1519644627/qcdxneltovxmy6ltajas.png)
 
 ### Install
