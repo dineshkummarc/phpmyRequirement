@@ -333,12 +333,12 @@ class Admin extends BaseController
 
         if($backup)
         {
-            $this->session->set_flashdata('success', 'Tablo temizleme işlemi başarılı');
+            $this->session->set_flashdata('success', 'Table cleanup successful');
             redirect('log-history-backup');
         }
         else
         {
-            $this->session->set_flashdata('error', 'Tablo temizleme işlemi başarısız');
+            $this->session->set_flashdata('error', 'Table cleanup failed');
             redirect('log-history-backup');
         }
     }
