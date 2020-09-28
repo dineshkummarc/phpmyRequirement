@@ -80,7 +80,7 @@
           </div>
         </form>
 
-        <a href="<?php echo base_url() ?>forgotPassword">Şifremi Unuttum</a>
+        <a href="<?php echo base_url() ?>forgotPassword">I forgot my password</a>
         <br>
 
     </div>
