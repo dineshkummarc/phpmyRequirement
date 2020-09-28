@@ -291,7 +291,7 @@ class Admin extends BaseController
 
         if($backup)
         {
-            $this->session->set_flashdata('success', 'Yedekleme ve Tablo temizleme işlemi başarılı');
+            $this->session->set_flashdata('success', 'Backup and Table cleanup successful');
             redirect('log-history');
         }
         else
