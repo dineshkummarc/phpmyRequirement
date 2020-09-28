@@ -116,7 +116,7 @@ class Admin extends BaseController
                 }
                 else
                 {
-                    $this->session->set_flashdata('error', 'Kullanıcı oluşturma başarısız');
+                    $this->session->set_flashdata('error', 'User creation failed');
                 }
                 
                 redirect('userListing');
