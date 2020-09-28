@@ -197,13 +197,13 @@ class Login extends BaseController
 
                     $sendStatus = resetPasswordEmail($data1);
 
-                    $process = 'Şifre Sıfırlama İsteği';
+                    $process = 'Password Reset İsteği';
                     $processFunction = 'Login/resetPasswordUser';
                     $this->logrecord($process,$processFunction);
 
                     if($sendStatus){
                         $status = "send";
-                        setFlashData($status, "Şifre sıfırlama linkiniz başarıyla gönderildi, mailinizi kontrol ediniz.");
+                        setFlashData($status, "Password Reset linkiniz başarıyla gönderildi, mailinizi kontrol ediniz.");
                     } else {
                         $status = "notsend";
                         setFlashData($status, "Email gönderme işlemi başarısız, tekrar deneyin.");
@@ -281,7 +281,7 @@ class Login extends BaseController
             {               
                 $this->login_model->createPasswordUser($email, $password);
                 
-                $process = 'Şifre Sıfırlama';
+                $process = 'Password Reset';
                 $processFunction = 'Login/createPasswordUser';
                 $this->logrecord($process,$processFunction);
 
