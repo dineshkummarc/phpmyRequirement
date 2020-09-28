@@ -353,7 +353,7 @@ class Admin extends BaseController
         
             $data['backups']=$map;
 
-            $process = 'Yedek Log Yükleme';
+            $process = 'Backup Log Upload';
             $processFunction = 'Admin/logHistoryUpload';
             $this->logrecord($process,$processFunction);
 
