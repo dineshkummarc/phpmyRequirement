@@ -27,7 +27,7 @@
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-      <p class="login-box-msg">Giriş Yap</p>
+      <p class="login-box-msg">Login</p>
       <?php $this->load->helper('form'); ?>
       <div class="row">
         <div class="col-md-12">
@@ -74,7 +74,7 @@
             </div>
             <!-- /.col -->
             <div class="col-xs-4">
-              <input type="submit" class="btn btn-primary btn-block btn-flat" value="Giriş Yap" />
+              <input type="submit" class="btn btn-primary btn-block btn-flat" value="Login" />
             </div>
             <!-- /.col -->
           </div>
