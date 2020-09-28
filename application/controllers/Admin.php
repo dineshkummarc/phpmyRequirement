@@ -260,7 +260,7 @@ class Admin extends BaseController
             $data["userInfo"] = $this->user_model->getUserInfoById($userId);
             $data['userRecords'] = $this->user_model->logHistory($userId);
             
-            $process = 'Tekil Log Viewing';
+            $process = 'Single Log Viewing';
             $processFunction = 'Admin/logHistorysingle';
             $this->logrecord($process,$processFunction);
 
