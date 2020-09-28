@@ -128,7 +128,7 @@ class Login extends BaseController
             }
             else
             {
-                $this->session->set_flashdata('error', 'Email adresi veya şifre yanlış');
+                $this->session->set_flashdata('error', 'Email adresi veya Password yanlış');
                 
                 redirect('/login');
             }
@@ -192,7 +192,7 @@ class Login extends BaseController
                     if(!empty($userInfo)){
                         $data1["name"] = $userInfo[0]->name;
                         $data1["email"] = $userInfo[0]->email;
-                        $data1["message"] = "Şifrenizi Sıfırlayın";
+                        $data1["message"] = "Passwordnizi Sıfırlayın";
                     }
 
                     $sendStatus = resetPasswordEmail($data1);
@@ -286,12 +286,12 @@ class Login extends BaseController
                 $this->logrecord($process,$processFunction);
 
                 $status = 'success';
-                $message = 'Şifre başarıyla değiştirildi';
+                $message = 'Password başarıyla değiştirildi';
             }
             else
             {
                 $status = 'error';
-                $message = 'Şifre değiştirilemedi';
+                $message = 'Password değiştirilemedi';
             }
             
             setFlashData($status, $message);
