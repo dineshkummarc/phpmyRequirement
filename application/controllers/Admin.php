@@ -241,11 +241,11 @@ class Admin extends BaseController
             }
             $data['userRecords'] = $this->user_model->logHistory($userId);
 
-            $process = 'Log Görüntüleme';
+            $process = 'Log Viewing';
             $processFunction = 'Admin/logHistory';
             $this->logrecord($process,$processFunction);
 
-            $this->global['pageTitle'] = 'BSEU : Kullanıcı Giriş Geçmişi';
+            $this->global['pageTitle'] = 'BSEU: User Login History';
             
             $this->loadViews("logHistory", $this->global, $data, NULL);
     }
@@ -260,11 +260,11 @@ class Admin extends BaseController
             $data["userInfo"] = $this->user_model->getUserInfoById($userId);
             $data['userRecords'] = $this->user_model->logHistory($userId);
             
-            $process = 'Tekil Log Görüntüleme';
+            $process = 'Tekil Log Viewing';
             $processFunction = 'Admin/logHistorysingle';
             $this->logrecord($process,$processFunction);
 
-            $this->global['pageTitle'] = 'BSEU : Kullanıcı Giriş Geçmişi';
+            $this->global['pageTitle'] = 'BSEU: User Login History';
             
             $this->loadViews("logHistorysingle", $this->global, $data, NULL);      
     }
@@ -315,7 +315,7 @@ class Admin extends BaseController
             }
             $data['userRecords'] = $this->user_model->logHistoryBackup();
 
-            $process = 'Yedek Log Görüntüleme';
+            $process = 'Yedek Log Viewing';
             $processFunction = 'Admin/logHistoryBackup';
             $this->logrecord($process,$processFunction);
 
