@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>BSEU | Yönetim Paneli</title>
+  <title>BSEU | Management panel</title>
   <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
   <link href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"
@@ -23,11 +23,11 @@
     <div class="login-logo">
       <a href="#">
         <b>BSEU</b>
-        <br>Yönetim Paneli</a>
+        <br>Management panel</a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-      <p class="login-box-msg">Şifre Sıfırlama</p>
+      <p class="login-box-msg">Password Reset</p>
       <?php $this->load->helper('form'); ?>
       <div class="row">
         <div class="col-md-12">
