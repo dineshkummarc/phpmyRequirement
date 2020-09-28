@@ -117,10 +117,17 @@ CREATE TABLE `tbl_roles` (
 -- Dumping data for table `tbl_roles`
 --
 
+/*
 INSERT INTO `tbl_roles` (`roleId`, `role`) VALUES
 (1, 'Admin'),
 (2, 'Yönetici'),
 (3, 'Çalışan');
+*/
+
+INSERT INTO `tbl_roles` (`roleId`, `role`) VALUES
+(1, 'Admin'),
+(2, 'Manager'),
+(3, 'Worker');
 
 -- --------------------------------------------------------
 
@@ -139,9 +146,15 @@ CREATE TABLE `tbl_tasks_situations` (
 -- Dumping data for table `tbl_tasks_situations`
 --
 
+/*
 INSERT INTO `tbl_tasks_situations` (`statusId`, `status`) VALUES
 (1, 'Açık'),
 (2, 'Tamamlandı');
+*/
+
+INSERT INTO `tbl_tasks_situations` (`statusId`, `status`) VALUES
+(1, 'Open'),
+(2, 'Completed');
 
 -- --------------------------------------------------------
 
@@ -160,9 +173,16 @@ CREATE TABLE `tbl_tasks_prioritys` (
 -- Dumping data for table `tbl_roles`
 --
 
+/*
 INSERT INTO `tbl_tasks_prioritys` (`priorityId`, `priority`) VALUES
 (1, 'Acil'),
 (2, 'Orta'),
+(3, 'Normal');
+*/
+
+INSERT INTO `tbl_tasks_prioritys` (`priorityId`, `priority`) VALUES
+(1, 'Urgent'),
+(2, 'Middle'),
 (3, 'Normal');
 
 -- --------------------------------------------------------
