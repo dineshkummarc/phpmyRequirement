@@ -27,7 +27,7 @@
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
-            <p class="login-box-msg">Şifremi Unuttum</p>
+            <p class="login-box-msg">I forgot my password</p>
             <?php $this->load->helper('form'); ?>
             <div class="row">
                 <div class="col-md-12">
