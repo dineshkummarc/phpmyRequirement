@@ -53,7 +53,7 @@ class Admin extends BaseController
             
             $data['userRecords'] = $this->user_model->userListing($searchText, $returns["page"], $returns["segment"]);
             
-            $process = 'Kullanıcı Listeleme';
+            $process = 'User Listing';
             $processFunction = 'Admin/userListing';
             $this->logrecord($process,$processFunction);
 
