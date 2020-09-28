@@ -57,7 +57,7 @@ class Admin extends BaseController
             $processFunction = 'Admin/userListing';
             $this->logrecord($process,$processFunction);
 
-            $this->global['pageTitle'] = 'BSEU : Kullanıcı Listesi';
+            $this->global['pageTitle'] = 'BSEU: User List';
             
             $this->loadViews("users", $this->global, $data, NULL);
     }
