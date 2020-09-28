@@ -60,22 +60,22 @@ if(!empty($userInfo))
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="oldpassword">Eski Şifre</label>
-                                        <input type="password" class="form-control required" placeholder="Eski Şifre" id="oldpassword" name="oldpassword" maxlength="20">
+                                        <label for="oldpassword">Eski Password</label>
+                                        <input type="password" class="form-control required" placeholder="Eski Password" id="oldpassword" name="oldpassword" maxlength="20">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="cpassword">Yeni Şifre</label>
-                                        <input type="password" class="form-control required equalTo" placeholder="Yeni Şifre" id="cpassword" name="cpassword" maxlength="20">
+                                        <label for="cpassword">Yeni Password</label>
+                                        <input type="password" class="form-control required equalTo" placeholder="Yeni Password" id="cpassword" name="cpassword" maxlength="20">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                             <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="cpassword2">Yeni Şifre Doğrula</label>
-                                        <input type="password" class="form-control required equalTo" placeholder="Yeni Şifre Tekrar" id="cpassword2" name="cpassword2" maxlength="20">
+                                        <label for="cpassword2">Yeni Password Doğrula</label>
+                                        <input type="password" class="form-control required equalTo" placeholder="Yeni Password Tekrar" id="cpassword2" name="cpassword2" maxlength="20">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
