@@ -1,7 +1,7 @@
 /**
  * File : addUser.js
  * 
- * This file contain the validation of add user form
+ * This file contain the validation of Add User form
  * 
  * Using validation plugin : jquery.validate.js
  * 
