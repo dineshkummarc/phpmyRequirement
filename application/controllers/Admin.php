@@ -69,7 +69,7 @@ class Admin extends BaseController
     {
             $data['roles'] = $this->user_model->getUserRoles();
 
-            $this->global['pageTitle'] = 'BSEU : Kullanıcı Ekle';
+            $this->global['pageTitle'] = 'BSEU: User List';
 
             $this->loadViews("addNew", $this->global, $data, NULL);
     }
@@ -108,7 +108,7 @@ class Admin extends BaseController
                 
                 if($result > 0)
                 {
-                    $process = 'Kullanıcı Ekleme';
+                    $process = 'Add User';
                     $processFunction = 'Admin/addNewUser';
                     $this->logrecord($process,$processFunction);
 
