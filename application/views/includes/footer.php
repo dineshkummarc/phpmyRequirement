@@ -1,10 +1,10 @@
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-        <b>BSEU</b> Yönetim Paneli | V1.0
+        <b>BSEU</b> Management panel | V2.0
     </div>
-    <strong>Copyright &copy; 2018-2019
+    <strong>Copyright &copy; 2020-2021
         <a href="<?php echo base_url(); ?>">BSEU</a>
-    </strong> Tüm hakları saklıdır.
+    </strong> All Rights Reserved.
 </footer>
 
 <!-- jQuery UI 1.11.2 -->
