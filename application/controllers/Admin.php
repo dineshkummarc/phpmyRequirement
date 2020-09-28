@@ -193,7 +193,7 @@ class Admin extends BaseController
                     $processFunction = 'Admin/editUser';
                     $this->logrecord($process,$processFunction);
 
-                    $this->session->set_flashdata('success', 'Kullanıcı başarıyla güncellendi');
+                    $this->session->set_flashdata('success', 'User successfully updated');
                 }
                 else
                 {
