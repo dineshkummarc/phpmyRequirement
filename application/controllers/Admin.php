@@ -357,7 +357,7 @@ class Admin extends BaseController
             $processFunction = 'Admin/logHistoryUpload';
             $this->logrecord($process,$processFunction);
 
-            $this->global['pageTitle'] = 'BSEU : Kullanıcı Log Yükleme';
+            $this->global['pageTitle'] = 'BSEU : User Log Upload';
             
             $this->loadViews("logHistoryUpload", $this->global, $data, NULL);      
     }
@@ -440,12 +440,12 @@ class Admin extends BaseController
                 }
             if (empty($lines) || !isset($lines))
             {
-                $this->session->set_flashdata('error', 'Yedek yükleme işlemi başarısız');
+                $this->session->set_flashdata('error', 'Backup installation failed');
                 redirect('log-history-upload');
             }
             else
             {
-                $this->session->set_flashdata('success', 'Yedek yükleme işlemi başarılı');
+                $this->session->set_flashdata('success', 'Backup installation is successful');
                 redirect('log-history-upload');
             }
     }
