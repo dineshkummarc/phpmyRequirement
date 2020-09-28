@@ -137,7 +137,7 @@ class Admin extends BaseController
             $data['roles'] = $this->user_model->getUserRoles();
             $data['userInfo'] = $this->user_model->getUserInfo($userId);
 
-            $this->global['pageTitle'] = 'BSEU : Kullanıcı Düzenle';
+            $this->global['pageTitle'] = 'BSEU: Edit User';
             
             $this->loadViews("editOld", $this->global, $data, NULL);
     }
@@ -189,7 +189,7 @@ class Admin extends BaseController
                 
                 if($result == true)
                 {
-                    $process = 'Kullanıcı Güncelleme';
+                    $process = 'User Update';
                     $processFunction = 'Admin/editUser';
                     $this->logrecord($process,$processFunction);
 
@@ -197,7 +197,7 @@ class Admin extends BaseController
                 }
                 else
                 {
-                    $this->session->set_flashdata('error', 'Kullanıcı güncelleme başarısız');
+                    $this->session->set_flashdata('error', 'User Update başarısız');
                 }
                 
                 redirect('userListing');
