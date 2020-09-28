@@ -1,6 +1,7 @@
 <?php defined ( 'BASEPATH' ) or exit ( 'No direct script access allowed' );
 
-require APPPATH . '/third_party/vendor/autoload.php';
+// require APPPATH . '/third_party/vendor/autoload.php';
+require_once(APPPATH.'/config/autoload.php');
 
 /**
  * Class : BaseController
