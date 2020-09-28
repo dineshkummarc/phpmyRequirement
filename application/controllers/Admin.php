@@ -112,7 +112,7 @@ class Admin extends BaseController
                     $processFunction = 'Admin/addNewUser';
                     $this->logrecord($process,$processFunction);
 
-                    $this->session->set_flashdata('success', 'Kullanıcı başarıyla oluşturuldu');
+                    $this->session->set_flashdata('success', 'User successfully created');
                 }
                 else
                 {
