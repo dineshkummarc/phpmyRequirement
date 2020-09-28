@@ -44,13 +44,13 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="password">Şifre</label>
+                                        <label for="password">Password</label>
                                         <input type="password" class="form-control required" id="password" name="password" maxlength="20">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="cpassword">Şifre Doğrula</label>
+                                        <label for="cpassword">Password Doğrula</label>
                                         <input type="password" class="form-control required equalTo" id="cpassword" name="cpassword" maxlength="20">
                                     </div>
                                 </div>
