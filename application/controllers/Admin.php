@@ -280,7 +280,7 @@ class Admin extends BaseController
         );
         $backup=$this->dbutil->backup($prefs) ;
 
-        date_default_timezone_set('Europe/Istanbul');
+        date_default_timezone_set('Asia/kolkata');
         $date = date('d-m-Y H-i');
 
         $filename = './backup/'.$date.'.sql.gz';
