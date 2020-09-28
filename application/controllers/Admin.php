@@ -197,7 +197,7 @@ class Admin extends BaseController
                 }
                 else
                 {
-                    $this->session->set_flashdata('error', 'User Update başarısız');
+                    $this->session->set_flashdata('error', 'User Update failed');
                 }
                 
                 redirect('userListing');
