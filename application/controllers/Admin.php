@@ -218,7 +218,7 @@ class Admin extends BaseController
             if ($result > 0) {
                  echo(json_encode(array('status'=>TRUE)));
 
-                 $process = 'Kullanıcı Silme';
+                 $process = 'Deleting a User';
                  $processFunction = 'Admin/deleteUser';
                  $this->logrecord($process,$processFunction);
 
