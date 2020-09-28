@@ -68,14 +68,14 @@ if(!empty($userInfo))
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="password">Şifre</label>
+                                            <label for="password">Password</label>
                                             <input type="password" class="form-control" id="password" placeholder="Password" name="password" maxlength="20">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="cpassword">Şifre Doğrula</label>
-                                            <input type="password" class="form-control" id="cpassword" placeholder="Şifrenizi Doğrulayın" name="cpassword" maxlength="20">
+                                            <label for="cpassword">Password Doğrula</label>
+                                            <input type="password" class="form-control" id="cpassword" placeholder="Passwordnizi Doğrulayın" name="cpassword" maxlength="20">
                                         </div>
                                     </div>
                                 </div>
