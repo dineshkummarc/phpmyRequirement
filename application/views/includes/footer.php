@@ -2,9 +2,9 @@
 
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
-          <b>CodeInsect</b> FeedBacker | Version 2.0
+          <b>DINESHKUMMARC</b> FeedBacker | Version 2.0
         </div>
-        <strong>Copyright &copy; 2020-2021 <a href="<?php echo base_url(); ?>dashboard">CodeInsect</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2020-2021 <a href="<?php echo base_url(); ?>dashboard">DINESHKUMMARC</a>.</strong> All rights reserved.
     </footer>
     
     <!-- jQuery UI 1.11.2 -->
