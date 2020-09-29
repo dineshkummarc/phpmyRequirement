@@ -1,5 +1,6 @@
 <?php
-require APPPATH . '/third_party/vendor/autoload.php';
+// require APPPATH . '/third_party/vendor/autoload.php';
+require_once(APPPATH.'/config/autoload.php');
 
 /**
  * Class : Cron
