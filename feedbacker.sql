@@ -379,12 +379,21 @@ CREATE TABLE `tbl_users` (
 -- Dumping data for table `tbl_users`
 --
 
+/*
 INSERT INTO `tbl_users` (`userId`, `email`, `password`, `name`, `mobile`, `roleId`, `isDeleted`, `createdBy`, `createdDtm`, `updatedBy`, `updatedDtm`) VALUES
 (1, 'admin@example.com', '$2y$10$gbQl4Dbtl7m9wwKC3ABTVeVDUar/ko/zW.PCHZ8DxGJPwOXiq9QuS', 'Administrator', '9890098900', 1, 0, 0, '2015-07-01 18:56:49', 1, '2018-02-13 07:57:55'),
 (2, 'emp1@example.com', '$2y$10$/raL8WKiJjyRiPazkPeuYu3DCAJE5DOsoWPErmpYPUgLtYjXArpJ6', 'Employee 1', '9890098900', 3, 0, 1, '2016-05-10 14:21:51', 1, '2018-02-12 09:57:16'),
 (3, 'emp2@example.com', '$2y$10$/raL8WKiJjyRiPazkPeuYu3DCAJE5DOsoWPErmpYPUgLtYjXArpJ6', 'Employee 2', '9890098900', 3, 0, 1, '2016-05-16 11:18:58', NULL, NULL),
 (4, 'emp3@example.com', '$2y$10$/raL8WKiJjyRiPazkPeuYu3DCAJE5DOsoWPErmpYPUgLtYjXArpJ6', 'Employee 3', '9890098900', 3, 0, 1, '2016-05-16 11:19:29', NULL, NULL),
 (5, 'emp4@example.com', '$2y$10$/raL8WKiJjyRiPazkPeuYu3DCAJE5DOsoWPErmpYPUgLtYjXArpJ6', 'Employee 4', '9890098900', 3, 0, 1, '2016-06-01 18:24:13', NULL, NULL);
+*/
+
+INSERT INTO `tbl_users` (`userId`, `email`, `password`, `name`, `mobile`, `roleId`, `isDeleted`, `createdBy`, `createdDtm`, `updatedBy`, `updatedDtm`) VALUES
+(1, 'admin@example.com', '$2y$10$gbQl4Dbtl7m9wwKC3ABTVeVDUar/ko/zW.PCHZ8DxGJPwOXiq9QuS', 'Administrator', '9890098900', 1, 0, 0, '2015-07-01 18:56:49', 1, '2018-02-13 07:57:55'),
+(2, 'emp1@example.com', '$2y$10$gbQl4Dbtl7m9wwKC3ABTVeVDUar/ko/zW.PCHZ8DxGJPwOXiq9QuS', 'Employee 1', '9890098900', 3, 0, 1, '2016-05-10 14:21:51', 1, '2018-02-12 09:57:16'),
+(3, 'emp2@example.com', '$2y$10$gbQl4Dbtl7m9wwKC3ABTVeVDUar/ko/zW.PCHZ8DxGJPwOXiq9QuS', 'Employee 2', '9890098900', 3, 0, 1, '2016-05-16 11:18:58', NULL, NULL),
+(4, 'emp3@example.com', '$2y$10$gbQl4Dbtl7m9wwKC3ABTVeVDUar/ko/zW.PCHZ8DxGJPwOXiq9QuS', 'Employee 3', '9890098900', 3, 0, 1, '2016-05-16 11:19:29', NULL, NULL),
+(5, 'emp4@example.com', '$2y$10$gbQl4Dbtl7m9wwKC3ABTVeVDUar/ko/zW.PCHZ8DxGJPwOXiq9QuS', 'Employee 4', '9890098900', 3, 0, 1, '2016-06-01 18:24:13', NULL, NULL);
 
 --
 -- Indexes for dumped tables
