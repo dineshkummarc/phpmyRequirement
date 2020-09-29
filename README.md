@@ -10,10 +10,10 @@ The executives of your company can call to customer from phone, and record their
 
 ## Requirements
 1. Apache/2.4.41
-1. ~~PHP 5.6~~ PHP 7.1.33 or greater
-2. ~~MySQL 5~~ MySQL 5.0.12-dev
-3. [Composer](https://getcomposer.org) - To install php libraries.
-4. [Gulp](https://gulpjs.com/) - To minify and uglify assets, js, css. Not necessary and will remove in next version.
+2. ~~PHP 5.6~~ PHP 7.1.33 or greater
+3. ~~MySQL 5~~ MySQL 5.0.12-dev
+4. [Composer](https://getcomposer.org) - To install php libraries.
+5. [Gulp](https://gulpjs.com/) - To minify and uglify assets, js, css. Not necessary and will remove in next version.
 
 ## Used PHP Framework & libraries
 1. [CodeIgniter](https://codeigniter.com/) ~~3.1.6~~ 3.1.11
