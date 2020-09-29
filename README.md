@@ -9,7 +9,7 @@ Small companies needs some software to keep track of their customers and provide
 The executives of your company can call to customer from phone, and record their feedbacks and requirements in this portal.
 
 ## Requirements
-1. PHP 5.6 or greater
+1. --PHP 5.6 or greater--
 2. MySQL 5
 3. [Composer](https://getcomposer.org) - To install php libraries.
 4. [Gulp](https://gulpjs.com/) - To minify and uglify assets, js, css. Not necessary and will remove in next version.
