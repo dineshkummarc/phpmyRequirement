@@ -1,5 +1,7 @@
 ## Codeigniter User Panel Management / BSEU
 
+TESTED ON => XAMPP v3.2.4 (Web Server with Apache/2.4.41, PHP/7.1.33, MySQL/mysqlnd 5.0.12-dev)
+
 ## What is the project about?
 
 BSEU is a management panel with role based application, using CodeIgniter(PHP MVC Framework).
@@ -19,6 +21,7 @@ The log page contains an entry showing the size of the table. If this size excee
 
 ### Technology Stack
 * [CodeIgniter](https://codeigniter.com) (PHP MVC Framework)
+* XAMPP v3.2.4 (Web Server with Apache/2.4.41, PHP/7.1.33, MySQL/mysqlnd 5.0.12-dev )
 
 ### Roadmap
 We can use this panel in all CodeIgniter projects. It can adapt to any kind of project by changing its roles and functions. This will save us from the start of a project management panel. With your contributions, we can create a management panel for our projects.
