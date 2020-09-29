@@ -10,13 +10,13 @@ The executives of your company can call to customer from phone, and record their
 
 ## Requirements
 1. Apache/2.4.41
-1. ~~PHP 5.6~~  PHP 7.1.33 or greater
+1. ~~PHP 5.6~~ PHP 7.1.33 or greater
 2. ~~MySQL 5~~ MySQL 5.0.12-dev
 3. [Composer](https://getcomposer.org) - To install php libraries.
 4. [Gulp](https://gulpjs.com/) - To minify and uglify assets, js, css. Not necessary and will remove in next version.
 
 ## Used PHP Framework & libraries
-1. [CodeIgniter](https://codeigniter.com/) -3.1.6- 3.1.11
+1. [CodeIgniter](https://codeigniter.com/) ~~3.1.6~~ 3.1.11
 2. [Microweber Screen](https://github.com/microweber/screen) : To capture screen-shot of website.
 3. [Akeneo Spreadsheet Parser](https://github.com/akeneo-labs/spreadsheet-parser) : To import huge amount of records from excel sheet.
 4. [TCPDF](https://github.com/tecnickcom/tcpdf) : To export as PDF.
