@@ -31,10 +31,12 @@ The executives of your company can call to customer from phone, and record their
 Hit url in your web browser ```http://localhost/feedbacker/```, login screen will appear. Just login with following credentials.
 
 Email : admin@example.com
-
 Password : admin
 
 Once you logged in using System Administrator credentials, you can change the credentials of others as you want.
+
+Email : emp1@example.com
+Password : admin
 
 ## Features
 1. Login, Logout, Change Password.
