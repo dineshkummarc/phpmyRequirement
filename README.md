@@ -53,6 +53,9 @@ Password : admin
 11. Automatic grabbing of screen-shot if you set cron job.
 12. List of daily schedule for feedback/followup.
 
+## Know Issues
+1. Importing customers from excel sheet not working.
+
 ## TODO (Remaining Features : Yet to develop)
 1. Versions of Requirements.
 2. Customer assignment history in case the executive is change.
