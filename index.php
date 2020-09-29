@@ -71,6 +71,8 @@ switch (ENVIRONMENT)
 	break;
 
 	case 'testing':
+	    error_reporting(-1);
+		ini_set('display_errors', 1);
 	case 'production':
 		ini_set('display_errors', 0);
 		if (version_compare(PHP_VERSION, '5.3', '>='))
@@ -177,7 +179,6 @@ switch (ENVIRONMENT)
  * Un-comment the $assign_to_config array below to use this feature
  */
 	// $assign_to_config['name_of_config_item'] = 'value of config item';
-
 
 
 // --------------------------------------------------------------------
