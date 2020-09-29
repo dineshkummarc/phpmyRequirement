@@ -1,6 +1,7 @@
 <?php
 
-require APPPATH . '/third_party/vendor/tecnickcom/tcpdf/tcpdf.php';
+// require APPPATH . '/third_party/vendor/tecnickcom/tcpdf/tcpdf.php';
+require_once(APPPATH.'/third_party/vendor/tecnickcom/tcpdf/tcpdf.php');
 
 class MYPDF extends TCPDF {
 
