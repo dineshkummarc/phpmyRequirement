@@ -2,7 +2,8 @@
 
 // require APPPATH . '/libraries/BaseController.php';
 require_once(APPPATH.'/libraries/BaseController.php');
-require APPPATH . '/libraries/SeoReport.php';
+// require APPPATH . '/libraries/SeoReport.php';
+require_once(APPPATH.'/libraries/SeoReport.php');
 
 
 class Seo extends BaseController
