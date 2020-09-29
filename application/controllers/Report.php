@@ -6,7 +6,8 @@ require_once(APPPATH.'/libraries/BaseController.php');
 // require APPPATH . '/third_party/vendor/autoload.php';
 require_once(APPPATH.'/config/autoload.php');
 
-require APPPATH . '/libraries/mypdf.php';
+// require APPPATH . '/libraries/mypdf.php';
+require_once(APPPATH.'/libraries/mypdf.php');
 
 /**
  * @filesource : Report.php
