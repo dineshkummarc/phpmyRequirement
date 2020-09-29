@@ -7,7 +7,7 @@ require_once(APPPATH.'/libraries/BaseController.php');
 // require APPPATH . '/libraries/mypdf.php';
 require_once(APPPATH.'/libraries/mypdf.php');
 
-use Akeneo\Component\SpreadsheetParser\SpreadsheetParser;
+// use Akeneo\Component\SpreadsheetParser\SpreadsheetParser;
 
 ini_set('session.cache_limiter','public');
 session_cache_limiter(false);
