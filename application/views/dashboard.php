@@ -82,7 +82,7 @@
               	<a href="#" id="lnkInReviewRawListing" class="statusAnchor">              
 	              <div class="small-box bg-blue">
 	                <div class="inner">
-	                  <h3><?php echo '$inReviewCount' ?></h3>
+	                  <h3><?php echo '$inReviewCount;' ?></h3>
 	                  <p>InReview Customers</p>
 	                </div>
 	                <div class="icon">
