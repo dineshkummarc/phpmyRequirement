@@ -152,12 +152,7 @@
 	              </div>
               </a>
             </div>
-		</div>
-		
-		
-		
-		
-		<div class="row">
+			
 			<div class="col-lg-3 col-xs-6">
 			  <a id="lnkCronListing" href="<?php echo ($role == ROLE_ADMIN)?base_url()."cron":base_url()."cron"; ?>">
 	              <div class="small-box bg-blue">
@@ -172,6 +167,7 @@
 	              </div>
               </a>
             </div>
+			
 		</div>
 		
     </section>
