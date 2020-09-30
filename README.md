@@ -15,11 +15,12 @@ The executives of your company can call to customer from phone, and record their
 4. [Composer](https://getcomposer.org) - To install php libraries.
 5. [Gulp](https://gulpjs.com/) - To minify and uglify assets, js, css. Not necessary and will remove in next version.
 
-## Used PHP Framework & libraries
-1. [CodeIgniter](https://codeigniter.com/) CodeIgniter/3.1.6
-2. [Microweber Screen](https://github.com/microweber/screen) : To capture screen-shot of website.
-3. [Akeneo Spreadsheet Parser](https://github.com/akeneo-labs/spreadsheet-parser) : To import huge amount of records from excel sheet.
-4. [TCPDF](https://github.com/tecnickcom/tcpdf) : To export as PDF.
+## Used PHP tools, Framework & libraries
+1. [XAMPP](https://www.apachefriends.org/index.html) XAMPP/3.2.4
+2. [CodeIgniter](https://codeigniter.com/) CodeIgniter/3.1.6
+3. [Microweber Screen](https://github.com/microweber/screen) : To capture screen-shot of website.
+4. [Akeneo Spreadsheet Parser](https://github.com/akeneo-labs/spreadsheet-parser) : To import huge amount of records from excel sheet.
+5. [TCPDF](https://github.com/tecnickcom/tcpdf) : To export as PDF.
 
 ## How to Install
 
@@ -36,7 +37,7 @@ Password : admin
 
 Once you logged in using System Administrator credentials, you can change the credentials of others as you want.
 
-Email : emp1@example.com
+Email : emp1@example.com, emp2@example.com, emp3@example.com, emp4@example.com
 Password : admin
 
 ## Features
