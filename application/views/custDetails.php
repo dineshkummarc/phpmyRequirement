@@ -335,7 +335,7 @@ if (! empty ( $reqCustomer )) {
 											value="<?php echo DEAD; ?>">Dead</option>
 										<option
 											<?php if($status == INREVIEW) { echo "selected='selected'"; } ?>
-											value="<?php echo INREVIEW; ?>">INREVIEW</option>
+											value="<?php echo INREVIEW; ?>">InReview</option>
 									</select>
 								</div>
 								<div class="col-md-2">
