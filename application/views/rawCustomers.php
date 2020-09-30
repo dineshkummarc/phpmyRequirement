@@ -21,7 +21,7 @@
                         <option value="<?php echo DEAD; ?>"
                             <?php if($searchStatus == DEAD) { echo "selected='selected'"; } ?>>Dead</option>
                         <option value="<?php echo INREVIEW; ?>"
-                            <?php if($searchStatus == INREVIEW) { echo "selected='selected'"; } ?>>INREVIEW</option>
+                            <?php if($searchStatus == INREVIEW) { echo "selected='selected'"; } ?>>InReview</option>
                     </select>
                 </div>
                 <div class="col-md-3">
