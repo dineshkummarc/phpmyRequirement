@@ -173,7 +173,7 @@
                 <li><a id="lnkEmailTemplates" href="<?php echo base_url(); ?>emailTemplates"><i class="fa fa-circle-o"></i> Email Templates</a></li>
                 <li><a id="lnkCompanyListing" href="<?php echo base_url(); ?>companyListing"><i class="fa fa-circle-o"></i> Company List</a></li>
                 <li><a id="lnkAttachmentListing" href="<?php echo base_url(); ?>attachmentListing"><i class="fa fa-circle-o"></i> Attachments</a></li>
-				<li><a id="lnkAttachmentListing" href="<?php echo base_url(); ?>cron"><i class="fa fa-circle-o"></i> Cron Job</a></li>
+				<li><a id="lnkCronListing" href="<?php echo base_url(); ?>cron"><i class="fa fa-circle-o"></i> Cron Job</a></li>
               </ul>
             </li>
             <li class="treeview">
