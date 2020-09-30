@@ -109,7 +109,8 @@ define('MAIL_PATH',                             '/usr/sbin/sendmail');
 /**
  * ****** APPLICATION CONSTANTS ******
  */
-define ( 'VER', '1.0.0.1' );
+// define ( 'VER', '1.0.0.1' );
+define ( 'VER', '1.0.0.2' );
 
 /**
  * ****** PATH CONSTANTS *************
