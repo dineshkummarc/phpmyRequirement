@@ -172,7 +172,7 @@
             </div>
 			<div class="col-lg-3 col-xs-6">
 			  <a id="lnkCronListing" href="<?php echo ($role == ROLE_ADMIN)?base_url()."cron":base_url()."cron"; ?>">
-	              <div class="small-box bg-blue">
+	              <div class="small-box bg-red">
 	                <div class="inner">
 	                  <h3><?php echo '$CronCount;' ?></h3>
 	                  <p>CronJob Today</p>
