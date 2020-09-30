@@ -77,6 +77,24 @@
               	</a>
               </form>
             </div>
+			<div class="col-lg-3 col-xs-6">
+              <form method="post" action="<?php echo ($role == ROLE_ADMIN)?base_url()."rawCustomerListing":base_url()."inReviewListing"; ?>">
+              	<a href="#" id="lnkInReviewRawListing" class="statusAnchor">              
+	              <div class="small-box bg-blue">
+	                <div class="inner">
+	                  <h3><?php echo '$inReviewCount' ?></h3>
+	                  <p>InReview Customers</p>
+	                </div>
+	                <div class="icon">
+	                  <i class="ion ion-person-add"></i>
+	                </div>
+	                <input type="hidden" name="searchStatus" value="1" />	
+	                <span class="small-box-footer statusAnchor">More info <i class="fa fa-arrow-circle-right"></i></span>
+	              </div>
+	            </a>
+              </form>
+            </div><!-- ./col -->
+			
           </div>
           
 	<?php if($role == ROLE_ADMIN){ ?>
@@ -152,7 +170,6 @@
 	              </div>
               </a>
             </div>
-			
 			<div class="col-lg-3 col-xs-6">
 			  <a id="lnkCronListing" href="<?php echo ($role == ROLE_ADMIN)?base_url()."cron":base_url()."cron"; ?>">
 	              <div class="small-box bg-blue">
@@ -169,6 +186,5 @@
             </div>
 			
 		</div>
-		
     </section>
 </div>
