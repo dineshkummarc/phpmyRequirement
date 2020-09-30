@@ -223,7 +223,8 @@ INSERT INTO `fb_fbtype` (`fbt_id`, `fbt_name`) VALUES
 (4, 'Not Interested'),
 (5, 'Abused'),
 (6, 'Not Received'),
-(7, 'Unable to connect');
+(7, 'Unable to connect'),
+(8, 'Review');
 
 -- --------------------------------------------------------
 
