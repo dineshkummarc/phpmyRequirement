@@ -1,10 +1,7 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Dashboard
-        <small>Control panel</small>
-      </h1>
+      <h1> Dashboard <small>Control panel</small> </h1>
     </section>
     
     <section class="content">
@@ -78,8 +75,8 @@
               </form>
             </div>
 			<div class="col-lg-3 col-xs-6">
-              <form method="post" action="<?php echo ($role == ROLE_ADMIN)?base_url()."rawCustomerListing":base_url()."inReviewListing"; ?>">
-              	<a href="#" id="lnkInReviewRawListing" class="statusAnchor">              
+              <form method="post" action="<?php echo ($role == ROLE_ADMIN)?base_url()."rawCustomerListing":base_url()."rawListing"; ?>">
+              	<a href="#" id="lnkDashInReviewListing" class="statusAnchor">              
 	              <div class="small-box bg-blue">
 	                <div class="inner">
 	                  <h3><?php echo '$inReviewCount;' ?></h3>
