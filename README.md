@@ -6,19 +6,19 @@ Small companies needs some software to keep track of their customers and provide
 The executives of your company can call to customer from phone, and record their feedbacks and requirements in this portal.
 
 Login
-![login.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/captures/browser/login.png)
+![login.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/screenshots/login.png)
 
 Dashboard
-![dashboard.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/captures/browser/dashboard.png)
+![dashboard.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/screenshots/dashboard.png)
 
 Import
-![import.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/captures/browser/import.png)
+![import.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/screenshots/import.png)
 
 CustomerListing
-![CustomerListing.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/captures/browser/CustomerListing.png)
+![CustomerListing.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/screenshots/CustomerListing.png)
 
 Caching
-![caching.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/captures/browser/caching.png)
+![caching.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/screenshots/caching.png)
 
 
 ## Requirements
