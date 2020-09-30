@@ -1,12 +1,25 @@
 # Feedbacker
-> Project is currently under development.
-
-Feedback system to record feedback of customers. This is for marketing purpose.
+Feedback system to record feedback of customers. This is for marketing purpose. ### Project is currently under development.
 
 ## Introduction
 Small companies needs some software to keep track of their customers and provided services (communication purpose). This system is developed to fulfil their needs. The companies which are providing Software Services like Web Development, App Development, SEO, ERP, Desktop Software, Mobile Software - they can use this project for their internal purpose.
-
 The executives of your company can call to customer from phone, and record their feedbacks and requirements in this portal.
+
+Login
+![login.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/captures/browser/login.png)
+
+Dashboard
+![dashboard.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/captures/browser/dashboard.png)
+
+Import
+![import.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/captures/browser/import.png)
+
+CustomerListing
+![CustomerListing.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/captures/browser/CustomerListing.png)
+
+Caching
+![caching.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/captures/browser/caching.png)
+
 
 ## Requirements
 1. Apache/2.4.41
