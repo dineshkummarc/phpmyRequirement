@@ -123,7 +123,7 @@
               <a id="lnkImport" href="<?php echo base_url(); ?>import">
                 <i class="fa fa-dashboard"></i> <span>Import</span>
               </a>
-            </li>
+            </li>			
             <li class="treeview">
               <a id="lnkUnassignedCustomers" href="<?php echo base_url(); ?>unassignCustomers">
                 <i class="fa fa-users"></i><span>Assign Customers</span>
