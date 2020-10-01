@@ -11,7 +11,6 @@ use Screen\Injection\LocalPath;
 use Screen\Injection\Url;
 use Screen\Location\Jobs;
 use Screen\Location\Output;
-use Screen\CookieJar;
 
 /**
  * Class Capture
@@ -34,13 +33,13 @@ class Capture
      * @var string
      */
     protected $top;
-
+    
     /**
      * dom element left position
      * @var string
      */
     protected $left;
-
+    
     /**
      * Width of the page to render
      *
@@ -90,20 +89,13 @@ class Capture
      */
     protected $userAgentString = '';
 
-	/**
-	 * Sets the option to block analytics from being pinged
-	 *
-	 * @var boolean
-	 */
-	protected $blockAnalytics = false;
-
     /**
      * Sets the timeout period
      *
      * @var int
      */
     protected $timeout = 0;
-
+    
      /**
      * Sets the delay period
      *
@@ -168,20 +160,6 @@ class Capture
     protected $options = array();
 
     /**
-    * Sets to keep the cookies between save().
-    *
-    * @var bool
-    */
-    protected $keepCookies;
-
-    /**
-    * CookieJar to put cookies saved.
-    *
-    * @var CookieJar
-    */
-    public $cookieJar;
-
-    /**
      * Capture constructor.
      */
     public function __construct($url = null)
@@ -195,7 +173,6 @@ class Capture
 
         $this->jobs = new Jobs();
         $this->output = new Output();
-        $this->cookieJar = new CookieJar();
 
         $this->setImageType(Types\Jpg::FORMAT);
     }
@@ -245,7 +222,7 @@ class Capture
         if ($this->timeout) {
             $data['timeout'] = $this->timeout;
         }
-
+        
         if ($this->delay) {
             $data['delay'] = $this->delay;
         }
@@ -258,27 +235,13 @@ class Capture
             $data['includedJsSnippets'] = $this->includedJsSnippets;
         }
 
-	    if ($this->blockAnalytics) {
-		    $data['blockAnalytics'] = $this->blockAnalytics;
-	    }
-
         if ($deleteFileIfExists && file_exists($this->imageLocation) && is_writable($this->imageLocation)) {
             unlink($this->imageLocation);
-        }
-
-        if ($this->keepCookies) {
-            // Take the JSON cookies and put in the array to be write in js.
-            $data['cookieJar'] = $this->cookieJar->getCookiesJSON();
         }
 
         $jobName = md5(json_encode($data));
         $jobPath = $this->jobs->getLocation() . $jobName . '.js';
 
-        // Saves the cookies in the same folder as the jobs.
-        $cookiesPath = $this->jobs->getLocation() . $jobName . '.json';
-        // Put the path in array. The js will pick up this filepath and save the cookies in it.
-        $data['cookiesPath'] = LocalPath::sanitize($cookiesPath);        
-        
         if (!is_file($jobPath)) {
             // Now we write the code to a js file
             $resultString = $this->getTemplateResult('screen-capture', $data);
@@ -291,11 +254,6 @@ class Capture
         $returnCode = null;
         $output = [];
         exec(sprintf("%s 2>&1", escapeshellcmd($command)), $output, $returnCode);
-
-        if ($this->keepCookies) {
-            $this->cookieJar->load($cookiesPath);
-            unlink($cookiesPath);
-        }
 
         if ($returnCode !== 0) {
             throw new PhantomJsException($output);
@@ -364,14 +322,10 @@ class Capture
      * @param string $url URL
      *
      * @throws \Exception If the url is not valid
-     *
-     * @return Capture
      */
     public function setUrl($url)
     {
         $this->url = new Url($url);
-
-        return $this;
     }
 
     /**
@@ -387,7 +341,7 @@ class Capture
 
         return $this;
     }
-
+    
     /**
      * Sets the page width
      *
@@ -401,7 +355,7 @@ class Capture
 
         return $this;
     }
-
+    
     /**
      * Sets the page width
      *
@@ -485,30 +439,6 @@ class Capture
 
         return $this;
     }
-
-	/**
-	 * Sets the block analytics type
-	 *
-	 * @param boolean
-	 *
-	 * @return Capture
-	 */
-	public function setBlockAnalytics($boolean)
-	{
-		$this->blockAnalytics = $boolean;
-
-		return $this;
-	}
-
-	/**
-	 * Returns the block analytics instance
-	 *
-	 * @return Type
-	 */
-	public function getBlockAnalytics()
-	{
-		return $this->blockAnalytics;
-	}
 
     /**
      * Returns the image type instance
@@ -608,19 +538,6 @@ class Capture
     {
         $this->options = $options;
 
-        return $this;
-    }
-
-    /**
-     * Sets to keep the cookies between save().
-     *
-     * @param bool $choice
-     *
-     * @return $this
-     */
-    public function keepCookiesBetweenSave($choice)
-    {
-        $this->keepCookies = $choice;
         return $this;
     }
 }

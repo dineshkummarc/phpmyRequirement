@@ -4,7 +4,6 @@ namespace Screen\Image;
 
 use Screen\Image\Types\Jpg;
 use Screen\Image\Types\Png;
-use Screen\Image\Types\Pdf;
 use Screen\Image\Types\Type;
 
 class Types
@@ -12,7 +11,6 @@ class Types
     protected static $typesMap = array(
         Jpg::FORMAT => 'Screen\Image\Types\Jpg',
         Png::FORMAT => 'Screen\Image\Types\Png',
-        Pdf::FORMAT => 'Screen\Image\Types\Pdf'
     );
 
     /**
