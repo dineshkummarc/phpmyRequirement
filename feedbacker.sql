@@ -216,6 +216,7 @@ CREATE TABLE `fb_fbtype` (
 -- Dumping data for table `fb_fbtype`
 --
 
+/*
 INSERT INTO `fb_fbtype` (`fbt_id`, `fbt_name`) VALUES
 (1, 'Good'),
 (2, 'Bad'),
@@ -225,6 +226,17 @@ INSERT INTO `fb_fbtype` (`fbt_id`, `fbt_name`) VALUES
 (6, 'Not Received'),
 (7, 'Unable to connect'),
 (8, 'Review');
+*/
+
+INSERT INTO `fb_fbtype` (`fbt_id`, `fbt_name`) VALUES
+(1, 'Requester Feels Good'),
+(2, 'Requester Feels Bad'),
+(3, 'Requester is Interested'),
+(4, 'Requester is Not Interested'),
+(5, 'Requester Abused'),
+(6, 'No Feedback Received'),
+(7, 'Unable to Connect'),
+(8, 'Requester needs Review');
 
 -- --------------------------------------------------------
 
