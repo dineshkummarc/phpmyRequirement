@@ -1,11 +1,12 @@
 <?php if (! defined ( 'BASEPATH' )) exit ( 'No direct script access allowed' );
 
-// require APPPATH . '/third_party/vendor/autoload.php';
-require_once(APPPATH.'/config/autoload.php');
 // require APPPATH . '/libraries/BaseController.php';
 require_once(APPPATH.'/libraries/BaseController.php');
+require_once(APPPATH.'/third_party/tcpdf/tcpdf.php');
 // require APPPATH . '/libraries/mypdf.php';
 require_once(APPPATH.'/libraries/mypdf.php');
+// require APPPATH . '/third_party/vendor/autoload.php';
+require_once(APPPATH.'/third_party/spreadparser/autoload.php');
 
 use Akeneo\Component\SpreadsheetParser\SpreadsheetParser;
 
