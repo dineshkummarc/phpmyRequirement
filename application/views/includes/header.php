@@ -123,7 +123,19 @@
               <a id="lnkImport" href="<?php echo base_url(); ?>import">
                 <i class="fa fa-dashboard"></i> <span>Import</span>
               </a>
-            </li>			
+            </li>
+
+			<li class="treeview">
+              <a id="lnkConfig" href="#">
+                <i class="fa fa-files-o"></i>
+                <span>Config</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu menu-open">
+                <li><a id="lnkRole" href="<?php echo base_url(); ?>role"><i class="fa fa-circle-o"></i> Roles</a></li>
+              </ul>
+            </li>
+			
             <li class="treeview">
               <a id="lnkUnassignedCustomers" href="<?php echo base_url(); ?>unassignCustomers">
                 <i class="fa fa-users"></i><span>Assign Customers</span>
