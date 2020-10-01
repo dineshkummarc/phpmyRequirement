@@ -135,6 +135,7 @@
                 <li><a id="lnkRole" href="<?php echo base_url(); ?>role"><i class="fa fa-circle-o"></i> Roles</a></li>
 				<li><a id="lnkpackages" href="<?php echo base_url(); ?>packages"><i class="fa fa-circle-o"></i> Packages</a></li>
 				<li><a id="lnkfeedbacktypes" href="<?php echo base_url(); ?>feedbacktypes"><i class="fa fa-circle-o"></i> Feedback Types</a></li>
+				<li><a id="lnkattachmenttypes" href="<?php echo base_url(); ?>attachmenttypes"><i class="fa fa-circle-o"></i> Attachment Types</a></li>
               </ul>
             </li>
 			
