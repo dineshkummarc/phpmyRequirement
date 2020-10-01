@@ -133,6 +133,7 @@
               </a>
               <ul class="treeview-menu menu-open">
                 <li><a id="lnkRole" href="<?php echo base_url(); ?>role"><i class="fa fa-circle-o"></i> Roles</a></li>
+				<li><a id="lnkpackages" href="<?php echo base_url(); ?>packages"><i class="fa fa-circle-o"></i> Packages</a></li>
               </ul>
             </li>
 			
