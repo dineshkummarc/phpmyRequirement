@@ -3,9 +3,9 @@
 // require APPPATH . '/libraries/BaseController.php';
 require_once(APPPATH.'/libraries/BaseController.php');
 // require APPPATH . '/third_party/vendor/autoload.php';
-require_once(APPPATH.'/config/autoload.php');
+require_once(APPPATH.'/third_party/tcpdf/tcpdf.php');
 // require APPPATH . '/libraries/mypdf.php';
-require_once(APPPATH.'/libraries/mypdf.php');
+require_once(APPPATH.'/third_party/tcpdf/mypdf.php');
 
 /**
  * @filesource : Report.php
