@@ -77,3 +77,8 @@ Password : admin
 4. CRUD - portfolio and profile attachements.
 5. CRUD - HTML email templates.
 6. Report - Summary
+7. CRUD - Cron Job
+8. CRUD - Role
+9. CRUD - packages
+10. CRUD - feedbacktypes
+11. CRUD - attachmenttypes
