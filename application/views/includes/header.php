@@ -111,7 +111,18 @@
                 <i class="fa fa-bell-o"></i><span>Follow Ups</span>
               </a>
             </li>
-            <?php
+          <li class="treeview">
+              <a id="lnkCMS" href="#">
+                <i class="fa fa-gear"></i>
+                <span> Calender</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu menu-open">
+                <li><a id="lnkCalender" href="<?php echo base_url(); ?>calender"><i class="fa fa-circle-o"></i> Calender</a></li>
+                <li><a id="lnkCallListing" href="<?php echo base_url(); ?>callListing"><i class="fa fa-circle-o"></i> Calls</a></li>
+              </ul>
+            </li>
+          <?php
             }
             ?>
 
