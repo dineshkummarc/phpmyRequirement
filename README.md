@@ -83,6 +83,10 @@ Password : admin
 6. Report - Summary
 7. CRUD - Cron Job
 8. CRUD - Role
-9. CRUD - packages
-10. CRUD - feedbacktypes
-11. CRUD - attachmenttypes
+9. CRUD - Packages
+10. CRUD - Feedback Types
+11. CRUD - Attachment Types
+12. Calender to list/show the Dates
+13. CRUD - Calender Configuration
+14. Show call status on calender based on Dates
+15. Call Reminder for initiating the call so that no one forgets to attend the call
