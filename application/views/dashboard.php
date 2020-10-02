@@ -12,7 +12,7 @@
 	              <div class="small-box bg-yellow">
 	                <div class="inner">
 	                  <h3><?php echo $rawCount ?></h3>
-	                  <p>Raw Customers</p>
+	                  <p>New (Raw) Customers</p>
 	                </div>
 	                <div class="icon">
 	                  <i class="ion ion-person-add"></i>
