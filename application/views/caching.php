@@ -29,14 +29,14 @@
 		                    <tr>
 		                    	<td>1</td>
 		                    	<td>Login</td>
-								<td>Admin</td>
+								<td><?php echo $this->userId; ?></td>
 		                    	<td>/login</td>
 		                    	<td class="alignCenter"><a href="#" id="refreshSpinner_1" data-spinner="1" data-path="login" class="delCache"><i  class="fa fa-refresh fa-fw"></i></a></td>
 		                    </tr>
 		                    <tr>
 		                    	<td>2</td>
 		                    	<td>Dashboard</td>
-								<td>Admin</td>
+								<td><?php echo $this->userId; ?></td>
 		                    	<td>/dashboard</td>
 		                    	<td class="alignCenter"><a href="#" id="refreshSpinner_2" data-spinner="2" data-path="dashboard" class="delCache"><i class="fa fa-refresh fa-fw"></i></a></td>
 		                    </tr>
