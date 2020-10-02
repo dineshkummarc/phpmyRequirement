@@ -43,7 +43,7 @@
         <!-- Logo -->
         <a id="lnkLogo" href="<?php echo base_url(); ?>dashboard" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>F</b>B</span>
+          <span class="logo-mini"><b>R</b>A</span>
           <!-- logo for regular state and mobile devices -->
           <span class="logo-lg"><b>Feed</b>Backer</span>
         </a>
