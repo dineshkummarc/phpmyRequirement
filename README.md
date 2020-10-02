@@ -1,5 +1,7 @@
 # Feedbacker
-Feedback system to record feedback of customers. This is for marketing purpose. ### Project is currently under development.
+Feedback system to record feedback of customers. This is for marketing purpose. 
+
+### Project is currently under development, not ready for Production use.
 
 ## Introduction
 Small companies needs some software to keep track of their customers and provided services (communication purpose). This system is developed to fulfil their needs. The companies which are providing Software Services like Web Development, App Development, SEO, ERP, Desktop Software, Mobile Software - they can use this project for their internal purpose.
