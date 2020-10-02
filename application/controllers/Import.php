@@ -4,7 +4,7 @@
 require_once(APPPATH.'/libraries/BaseController.php');
 require_once(APPPATH.'/third_party/tcpdf/tcpdf.php');
 // require APPPATH . '/libraries/mypdf.php';
-require_once(APPPATH.'/libraries/mypdf.php');
+require_once(APPPATH.'/third_party/tcpdf/mypdf.php');
 // require APPPATH . '/third_party/vendor/autoload.php';
 require_once(APPPATH.'/third_party/spreadparser/autoload.php');
 
