@@ -43,17 +43,19 @@ Caching
 4. Done!
 
 ## Login Credentials
-Hit url in your web browser ```http://localhost/feedbacker/```, login screen will appear. Admin can login with following credentials.
+Hit url in your web browser ```http://localhost/feedbacker/```, login screen will appear. 
+
+###Admin can login with following credentials.
 
 Email : admin@example.com
 Password : admin
 
-Manager can login with following credentials.
+###Manager can login with following credentials.
 
 Email : manager@example.com
 Password : manager
 
-Users can login with following credentials.
+###Users can login with following credentials.
 
 Email : emp1@example.com, emp2@example.com, emp3@example.com, emp4@example.com
 Password : admin
