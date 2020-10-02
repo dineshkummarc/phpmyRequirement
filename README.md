@@ -1,5 +1,5 @@
-# Feedbacker
-Feedback system to record feedback of customers. This is for marketing purpose. 
+# RequirementAnalysis
+Feedback system to record Requirement & feedback of customers. This is for marketing purpose.
 
 ### Project is currently under development, not ready for Production use.
 
@@ -8,19 +8,19 @@ Small companies needs some software to keep track of their customers and provide
 The executives of your company can call to customer from phone, and record their feedbacks and requirements in this portal.
 
 Login
-![login.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/screenshots/login.png)
+![login.png](https://github.com/dineshkummarc/RequirementAnalysis/blob/master/uploads/screenshots/login.png)
 
 Dashboard
-![dashboard.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/screenshots/dashboard.png)
+![dashboard.png](https://github.com/dineshkummarc/RequirementAnalysis/blob/master/uploads/screenshots/dashboard.png)
 
 Import
-![import.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/screenshots/import.png)
+![import.png](https://github.com/dineshkummarc/RequirementAnalysis/blob/master/uploads/screenshots/import.png)
 
 CustomerListing
-![CustomerListing.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/screenshots/CustomerListing.png)
+![CustomerListing.png](https://github.com/dineshkummarc/RequirementAnalysis/blob/master/uploads/screenshots/CustomerListing.png)
 
 Caching
-![caching.png](https://github.com/dineshkummarc/feedbacker/blob/master/uploads/screenshots/caching.png)
+![caching.png](https://github.com/dineshkummarc/RequirementAnalysis/blob/master/uploads/screenshots/caching.png)
 
 
 ## Requirements
@@ -41,11 +41,11 @@ Caching
 
 1. Clone or download the repository in your webroot.
 2. Goto ```application/third_party/``` folder and execute command ```composer install``` from command line (terminal on Linux).
-3. Create database in mysql using phpmyadmin and import sql file ```feedbacker.sql``` available in repository.
+3. Create database in mysql using phpmyadmin and import sql file ```RequirementAnalysis.sql``` available in repository.
 4. Done!
 
 ## Login Credentials
-Hit url in your web browser ```http://localhost/feedbacker/```, login screen will appear. 
+Hit url in your web browser ```http://localhost/RequirementAnalysis/```, login screen will appear. 
 
 ### Admin can login with following credentials.
 
