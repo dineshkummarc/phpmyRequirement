@@ -23,6 +23,7 @@
 		                      <th>Id</th>
 		                      <th>Page Name</th>
 							  <th>Requester Name</th>
+							  <th>Requester Role</th>
 		                      <th>Page URL</th>
 		                      <th class="alignCenter">Actions</th>
 		                    </tr>
@@ -30,6 +31,7 @@
 		                    	<td>1</td>
 		                    	<td>Login</td>
 								<td><?php echo $name; ?></td>
+								<td><?php echo $role_text; ?></td>
 		                    	<td>/login</td>
 		                    	<td class="alignCenter"><a href="#" id="refreshSpinner_1" data-spinner="1" data-path="login" class="delCache"><i  class="fa fa-refresh fa-fw"></i></a></td>
 		                    </tr>
@@ -37,7 +39,8 @@
 		                    	<td>2</td>
 		                    	<td>Dashboard</td>
 								<td><?php echo $name; ?></td>
-		                    	<td>/dashboard</td>
+								<td><?php echo $role_text; ?></td>
+								<td>/dashboard</td>
 		                    	<td class="alignCenter"><a href="#" id="refreshSpinner_2" data-spinner="2" data-path="dashboard" class="delCache"><i class="fa fa-refresh fa-fw"></i></a></td>
 		                    </tr>
 		                   </table>
