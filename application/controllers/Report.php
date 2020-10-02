@@ -32,7 +32,7 @@ class Report extends BaseController{
 			$this->loadThis ();
 		} else {
 			$data["activeEmployees"] = $this->report_model->getActiveEmployees();
-			$this->global ['pageTitle'] = 'Feedbacker : Empoyee-wise Report';
+			$this->global ['pageTitle'] = 'RequirementAnalysis : Empoyee-wise Report';
 			$this->loadViews("report/employeeReport", $this->global, $data, NULL);
 		}
 	}
