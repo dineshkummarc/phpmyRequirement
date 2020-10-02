@@ -43,15 +43,22 @@ Caching
 4. Done!
 
 ## Login Credentials
-Hit url in your web browser ```http://localhost/feedbacker/```, login screen will appear. Just login with following credentials.
+Hit url in your web browser ```http://localhost/feedbacker/```, login screen will appear. Admin can login with following credentials.
 
 Email : admin@example.com
 Password : admin
 
-Once you logged in using System Administrator credentials, you can change the credentials of others as you want.
+Manager can login with following credentials.
+
+Email : manager@example.com
+Password : manager
+
+Users can login with following credentials.
 
 Email : emp1@example.com, emp2@example.com, emp3@example.com, emp4@example.com
 Password : admin
+
+
 
 ## Features
 1. Login, Logout, Change Password.
