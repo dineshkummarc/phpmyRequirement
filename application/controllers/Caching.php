@@ -18,7 +18,7 @@ class Caching extends BaseController {
 			$this->loadThis ();
 		} else {
 			
-			$this->global ['pageTitle'] = 'Feedbacker : Cache Management';
+			$this->global ['pageTitle'] = 'RequirementAnalysis : Cache Management';
 			$this->loadViews("caching", $this->global, NULL, NULL);
 		}
 	}
