@@ -18,7 +18,7 @@
   <body class="login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="#"><b>CodeInsect</b><br><strong>R</strong>equirement<strong>A</strong>nalysis</a>
+        <a href="#"><b>DINESHKUMMARC</b><br><strong>R</strong>equirement<strong>A</strong>nalysis</a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Reset Password</p>
