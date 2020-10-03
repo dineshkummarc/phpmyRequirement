@@ -21,7 +21,11 @@ $.extend($.fn, {
 		// if nothing is selected, return nothing; can't chain anyway
 		if ( !this.length ) {
 			if ( options && options.debug && window.console ) {
+<<<<<<< HEAD
 				console.warn( "Warning: Nothing selected, can't validate, returning nothing." );
+=======
+				console.warn( "Nothing selected, can't validate, returning nothing." );
+>>>>>>> old2/master
 			}
 			return;
 		}
@@ -635,7 +639,11 @@ $.extend( $.validator, {
 					}
 				} catch ( e ) {
 					if ( this.settings.debug && window.console ) {
+<<<<<<< HEAD
 						console.log( "Exception: Exception occurred when checking element " + element.id + ", check the '" + rule.method + "' method.", e );
+=======
+						console.log( "Exception occurred when checking element " + element.id + ", check the '" + rule.method + "' method.", e );
+>>>>>>> old2/master
 					}
 					throw e;
 				}

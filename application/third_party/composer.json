@@ -1,0 +1,7 @@
+{
+    "require": {
+        "akeneo-labs/spreadsheet-parser": "^1.2",
+        "tecnickcom/tcpdf": "^6.2",
+        "microweber/screen": "^1.0"
+    }
+}

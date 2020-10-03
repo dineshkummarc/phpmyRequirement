@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
             404
             <small>Aradığınız sayfa maalasef bulunamadı.</small>
         </h1>
+=======
+<div class="content-wrapper">    
+    <section class="content-header">
+      <h1>
+        404
+        <small>This is not the page you are looking for</small>
+      </h1>
+>>>>>>> old2/master
     </section>
     <section class="content">
         <div class="row">

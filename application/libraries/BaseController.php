@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php defined ( 'BASEPATH' ) or exit ( 'No direct script access allowed' ); 
 /**
  * Class : BaseController (BaseController)
@@ -7,13 +8,31 @@
  */
 class BaseController extends CI_Controller {
 	// User session variables
+=======
+<?php defined ( 'BASEPATH' ) or exit ( 'No direct script access allowed' );
+
+// require APPPATH . '/third_party/vendor/autoload.php';
+require_once(APPPATH.'/third_party/screen/autoload.php');
+
+/**
+ * Class : BaseController
+ * Base Class to control over all the classes
+ * @author : Kishor Mali
+ * @version : 1.1
+ * @since : 15 November 2016
+ */
+class BaseController extends CI_Controller {
+>>>>>>> old2/master
 	protected $role = '';
 	protected $vendorId = '';
 	protected $name = '';
 	protected $roleText = '';
 	protected $global = array ();
 	protected $lastLogin = '';
+<<<<<<< HEAD
 	protected $status = '';
+=======
+>>>>>>> old2/master
 	
 	/**
 	 * Takes mixed data and optionally a status code, then creates the response
@@ -37,12 +56,30 @@ class BaseController extends CI_Controller {
 		if (! isset ( $isLoggedIn ) || $isLoggedIn != TRUE) {
 			redirect ( 'login' );
 		} else {
+<<<<<<< HEAD
 			$this->datas();
 		}
 	}
 	/**
 	 * This function is used to check the admin access
 	 * Rol definetions in application/config/constants.php
+=======
+			$this->role = $this->session->userdata ( 'role' );
+			$this->vendorId = $this->session->userdata ( 'userId' );
+			$this->name = $this->session->userdata ( 'name' );
+			$this->roleText = $this->session->userdata ( 'roleText' );
+			$this->lastLogin = $this->session->userdata ( 'lastLogin' );
+			
+			$this->global ['name'] = $this->name;
+			$this->global ['role'] = $this->role;
+			$this->global ['role_text'] = $this->roleText;
+			$this->global ['last_login'] = $this->lastLogin;
+		}
+	}
+	
+	/**
+	 * This function is used to check the access
+>>>>>>> old2/master
 	 */
 	function isAdmin() {
 		if ($this->role != ROLE_ADMIN) {
@@ -51,6 +88,7 @@ class BaseController extends CI_Controller {
 			return false;
 		}
 	}
+<<<<<<< HEAD
 
 	/**
 	 * This function is used to check the manager access
@@ -89,16 +127,43 @@ class BaseController extends CI_Controller {
 
             redirect(noaccess);
     }
+=======
+	
+	/**
+	 * This function is used to check the access
+	 */
+	function isTicketter() {
+		if ($this->role != ROLE_ADMIN || $this->role != ROLE_MANAGER) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	/**
+	 * This function is used to load the set of views
+	 */
+	function loadThis() {
+		$this->global ['pageTitle'] = 'DINESHKUMMARC : Access Denied';
+		
+		$this->load->view ( 'includes/header', $this->global );
+		$this->load->view ( 'access' );
+		$this->load->view ( 'includes/footer' );
+	}
+>>>>>>> old2/master
 	
 	/**
 	 * This function is used to logged out user from system
 	 */
 	function logout() {
+<<<<<<< HEAD
 
 		$process = 'Çıkış';
         $processFunction = 'BaseController/logout';
         $this->logrecord($process,$processFunction);
 
+=======
+>>>>>>> old2/master
 		$this->session->sess_destroy ();
 		
 		redirect ( 'login' );
@@ -164,6 +229,7 @@ class BaseController extends CI_Controller {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * This function used to load user sessions
 	 */
 	function datas()
@@ -203,5 +269,59 @@ class BaseController extends CI_Controller {
 		
 		$this->load->model('login_model');
 		$this->login_model->loginsert($logInfo);
+=======
+	 * This function is used to pull the data using curl
+	 * @param unknown $url
+	 * @return mixed
+	 */
+	function pullData($url)
+	{
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, $url);
+		// curl_setopt($ch, CURLOPT_USERAGENT, 'MyBot/1.0 (http://www.mysite.com/)');
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+		curl_setopt($ch, CURLOPT_TIMEOUT, 7200);
+		curl_setopt($_h, CURLOPT_DNS_USE_GLOBAL_CACHE, false );
+		curl_setopt($_h, CURLOPT_DNS_CACHE_TIMEOUT, 2 );
+		$data = curl_exec($ch);
+		$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+	
+		if (!$data) {
+			exit('cURL Error: '.curl_error($ch));
+		}
+	
+		curl_close($ch);
+	
+		return $data;
+	}
+	
+	/**
+	 * This function used to capture Actual Image of website
+	 * @param string $url : This is domain url
+	 * @param number $w : This is image width
+	 * @param number $h : This is image height
+	 * @param string $user_agent : This is browser user agent
+	 * @param number $type : This is device type - MOBILE or BROWSER
+	 */
+	function screenDemo($url, $w, $h, $user_agent, $type) {
+		set_time_limit ( 0 );
+	
+		$screen = new Screen\Capture ( $url );
+		$screen->setWidth ( intval ( $w ) );
+		$screen->setHeight ( intval ( $h ) );
+		$screen->setUserAgentString ( $user_agent );
+	
+		$filename = base64_encode ( $url ) . ".jpg";
+		$fileLocation = WEBSITE_CAPTURE . MOBILE . $filename;
+	
+		if ($type == CAPTURE_BROWSER) {
+			$fileLocation = WEBSITE_CAPTURE . BROWSER . $filename;
+		}
+
+		// pre($fileLocation);
+	
+		$screen->save ( $fileLocation );
+>>>>>>> old2/master
 	}
 }

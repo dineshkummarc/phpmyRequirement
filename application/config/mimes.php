@@ -179,6 +179,10 @@ return array(
 	'odt'	=>	'application/vnd.oasis.opendocument.text',
 	'odm'	=>	'application/vnd.oasis.opendocument.text-master',
 	'ott'	=>	'application/vnd.oasis.opendocument.text-template',
+<<<<<<< HEAD
 	'oth'	=>	'application/vnd.oasis.opendocument.text-web',
 	'sql'	=> 	 array('application/octet-stream', 'text/plain'),
+=======
+	'oth'	=>	'application/vnd.oasis.opendocument.text-web'
+>>>>>>> old2/master
 );

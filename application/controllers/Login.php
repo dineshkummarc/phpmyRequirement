@@ -1,5 +1,6 @@
 <?php if(!defined('BASEPATH')) exit('No direct script access allowed');
 
+<<<<<<< HEAD
 require APPPATH . '/libraries/BaseController.php';
 /**
  * Class : Login (LoginController)
@@ -9,6 +10,16 @@ require APPPATH . '/libraries/BaseController.php';
  * @since : 27.02.2018
  */
 class Login extends BaseController
+=======
+/**
+ * Class : Login (LoginController)
+ * Login class to control to authenticate user credentials and starts user's session.
+ * @author : Kishor Mali
+ * @version : 1.1
+ * @since : 15 November 2016
+ */
+class Login extends CI_Controller
+>>>>>>> old2/master
 {
     /**
      * This is default constructor of the class
@@ -26,6 +37,7 @@ class Login extends BaseController
     {
         $this->isLoggedIn();
     }
+<<<<<<< HEAD
 
     /**
      * This function is used to open error /404 not found page
@@ -60,6 +72,9 @@ class Login extends BaseController
 		$this->load->view ( 'includes/footer' );
     }
 
+=======
+    
+>>>>>>> old2/master
     /**
      * This function used to check the user is logged in or not
      */
@@ -99,6 +114,7 @@ class Login extends BaseController
             
             $result = $this->login_model->loginMe($email, $password);
             
+<<<<<<< HEAD
             if(count($result) > 0)
             {
                 foreach ($result as $res)
@@ -129,6 +145,33 @@ class Login extends BaseController
             else
             {
                 $this->session->set_flashdata('error', 'Email adresi veya Password yanlış');
+=======
+            if(!empty($result))
+            {
+                $lastLogin = $this->login_model->lastLoginInfo($result->userId);
+
+                $sessionArray = array('userId'=>$result->userId,                    
+                                        'role'=>$result->roleId,
+                                        'roleText'=>$result->role,
+                                        'name'=>$result->name,
+                                        'lastLogin'=> $lastLogin->createdDtm,
+                                        'isLoggedIn' => TRUE
+                                );
+
+                $this->session->set_userdata($sessionArray);
+
+                unset($sessionArray['userId'], $sessionArray['isLoggedIn'], $sessionArray['lastLogin']);
+
+                $loginInfo = array("userId"=>$result->userId, "sessionData" => json_encode($sessionArray), "machineIp"=>$_SERVER['REMOTE_ADDR'], "userAgent"=>getBrowserAgent(), "agentString"=>$this->agent->agent_string(), "platform"=>$this->agent->platform());
+
+                $this->login_model->lastLogin($loginInfo);
+                
+                redirect('/dashboard');
+            }
+            else
+            {
+                $this->session->set_flashdata('error', 'Email or password mismatch');
+>>>>>>> old2/master
                 
                 redirect('/login');
             }
@@ -192,11 +235,16 @@ class Login extends BaseController
                     if(!empty($userInfo)){
                         $data1["name"] = $userInfo[0]->name;
                         $data1["email"] = $userInfo[0]->email;
+<<<<<<< HEAD
                         $data1["message"] = "Passwordnizi Sıfırlayın";
+=======
+                        $data1["message"] = "Reset Your Password";
+>>>>>>> old2/master
                     }
 
                     $sendStatus = resetPasswordEmail($data1);
 
+<<<<<<< HEAD
                     $process = 'Password Reset İsteği';
                     $processFunction = 'Login/resetPasswordUser';
                     $this->logrecord($process,$processFunction);
@@ -207,18 +255,34 @@ class Login extends BaseController
                     } else {
                         $status = "notsend";
                         setFlashData($status, "Email gönderme işlemi başarısız, tekrar deneyin.");
+=======
+                    if($sendStatus){
+                        $status = "send";
+                        setFlashData($status, "Reset password link sent successfully, please check mails.");
+                    } else {
+                        $status = "notsend";
+                        setFlashData($status, "Email has been failed, try again.");
+>>>>>>> old2/master
                     }
                 }
                 else
                 {
                     $status = 'unable';
+<<<<<<< HEAD
                     setFlashData($status, "Bilgilerinizi gönderirken bir hata oluştu, tekrar deneyin.");
+=======
+                    setFlashData($status, "It seems an error while sending your details, try again.");
+>>>>>>> old2/master
                 }
             }
             else
             {
                 $status = 'invalid';
+<<<<<<< HEAD
                 setFlashData($status, "Email adresiniz sistemde kayıtlı değil.");
+=======
+                setFlashData($status, "This email is not registered with us.");
+>>>>>>> old2/master
             }
             redirect('/forgotPassword');
         }
@@ -240,7 +304,11 @@ class Login extends BaseController
         $data['email'] = $email;
         $data['activation_code'] = $activation_id;
         
+<<<<<<< HEAD
         if ($is_correct == 1)
+=======
+        if ($is_correct >= 1)
+>>>>>>> old2/master
         {
             $this->load->view('newPassword', $data);
         }
@@ -278,6 +346,7 @@ class Login extends BaseController
             $is_correct = $this->login_model->checkActivationDetails($email, $activation_id);
             
             if($is_correct == 1)
+<<<<<<< HEAD
             {               
                 $this->login_model->createPasswordUser($email, $password);
                 
@@ -287,11 +356,22 @@ class Login extends BaseController
 
                 $status = 'success';
                 $message = 'Password başarıyla değiştirildi';
+=======
+            {                
+                $this->login_model->createPasswordUser($email, $password);
+                
+                $status = 'success';
+                $message = 'Password changed successfully';
+>>>>>>> old2/master
             }
             else
             {
                 $status = 'error';
+<<<<<<< HEAD
                 $message = 'Password değiştirilemedi';
+=======
+                $message = 'Password change failed';
+>>>>>>> old2/master
             }
             
             setFlashData($status, $message);

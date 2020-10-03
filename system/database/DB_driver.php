@@ -6,7 +6,11 @@
  *
  * This content is released under the MIT License (MIT)
  *
+<<<<<<< HEAD
  * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
+=======
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+>>>>>>> old2/master
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +33,11 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+<<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+>>>>>>> old2/master
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -1926,6 +1934,7 @@ abstract class CI_DB_driver {
 					$i++;
 				}
 
+<<<<<<< HEAD
 				// dbprefix may've already been applied, with or without the identifier escaped
 				$ec = '(?<ec>'.preg_quote(is_array($this->_escape_char) ? $this->_escape_char[0] : $this->_escape_char).')?';
 				isset($ec[0]) && $ec .= '?'; // Just in case someone has disabled escaping by forcing an empty escape character
@@ -1939,6 +1948,17 @@ abstract class CI_DB_driver {
 				else
 				{
 					preg_match('#^'.$ec.preg_quote($this->dbprefix).'#', $parts[$i]) OR $parts[$i] = $this->dbprefix.$parts[$i];
+=======
+				// Verify table prefix and replace if necessary
+				if ($this->swap_pre !== '' && strpos($parts[$i], $this->swap_pre) === 0)
+				{
+					$parts[$i] = preg_replace('/^'.$this->swap_pre.'(\S+?)/', $this->dbprefix.'\\1', $parts[$i]);
+				}
+				// We only add the table prefix if it does not already exist
+				elseif (strpos($parts[$i], $this->dbprefix) !== 0)
+				{
+					$parts[$i] = $this->dbprefix.$parts[$i];
+>>>>>>> old2/master
 				}
 
 				// Put the parts back together

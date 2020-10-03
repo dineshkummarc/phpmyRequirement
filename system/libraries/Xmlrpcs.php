@@ -6,7 +6,11 @@
  *
  * This content is released under the MIT License (MIT)
  *
+<<<<<<< HEAD
  * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
+=======
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+>>>>>>> old2/master
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +33,11 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+<<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+>>>>>>> old2/master
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -402,11 +410,23 @@ class CI_Xmlrpcs extends CI_Xmlrpc {
 			{
 				return get_instance()->{$method_parts[1]}($m);
 			}
+<<<<<<< HEAD
 
 			return $this->object->{$method_parts[1]}($m);
 		}
 
 		return call_user_func($this->methods[$methName]['function'], $m);
+=======
+			else
+			{
+				return $this->object->{$method_parts[1]}($m);
+			}
+		}
+		else
+		{
+			return call_user_func($this->methods[$methName]['function'], $m);
+		}
+>>>>>>> old2/master
 	}
 
 	// --------------------------------------------------------------------
@@ -495,8 +515,15 @@ class CI_Xmlrpcs extends CI_Xmlrpc {
 
 			return new XML_RPC_Response(new XML_RPC_Values($docstring, 'string'));
 		}
+<<<<<<< HEAD
 
 		return new XML_RPC_Response(0, $this->xmlrpcerr['introspect_unknown'], $this->xmlrpcstr['introspect_unknown']);
+=======
+		else
+		{
+			return new XML_RPC_Response(0, $this->xmlrpcerr['introspect_unknown'], $this->xmlrpcstr['introspect_unknown']);
+		}
+>>>>>>> old2/master
 	}
 
 	// --------------------------------------------------------------------

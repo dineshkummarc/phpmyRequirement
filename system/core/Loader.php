@@ -6,7 +6,11 @@
  *
  * This content is released under the MIT License (MIT)
  *
+<<<<<<< HEAD
  * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
+=======
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+>>>>>>> old2/master
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +33,11 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+<<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+>>>>>>> old2/master
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
@@ -226,7 +234,11 @@ class CI_Loader {
 	 *
 	 * Loads and instantiates models.
 	 *
+<<<<<<< HEAD
 	 * @param	mixed	$model		Model name
+=======
+	 * @param	string	$model		Model name
+>>>>>>> old2/master
 	 * @param	string	$name		An optional object name to assign to
 	 * @param	bool	$db_conn	An optional database connection configuration to initialize
 	 * @return	object
@@ -303,8 +315,11 @@ class CI_Loader {
 				{
 					throw new RuntimeException($app_path."Model.php exists, but doesn't declare class CI_Model");
 				}
+<<<<<<< HEAD
 
 				log_message('info', 'CI_Model class loaded');
+=======
+>>>>>>> old2/master
 			}
 			elseif ( ! class_exists('CI_Model', FALSE))
 			{
@@ -319,8 +334,11 @@ class CI_Loader {
 				{
 					throw new RuntimeException($app_path.$class.".php exists, but doesn't declare class ".$class);
 				}
+<<<<<<< HEAD
 
 				log_message('info', config_item('subclass_prefix').'Model class loaded');
+=======
+>>>>>>> old2/master
 			}
 		}
 
@@ -354,9 +372,13 @@ class CI_Loader {
 		}
 
 		$this->_ci_models[] = $name;
+<<<<<<< HEAD
 		$model = new $model();
 		$CI->$name = $model;
 		log_message('info', 'Model "'.get_class($model).'" initialized');
+=======
+		$CI->$name = new $model();
+>>>>>>> old2/master
 		return $this;
 	}
 

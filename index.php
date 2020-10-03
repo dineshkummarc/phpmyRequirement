@@ -71,8 +71,11 @@ switch (ENVIRONMENT)
 	break;
 
 	case 'testing':
+<<<<<<< HEAD
 	    error_reporting(-1);
 		ini_set('display_errors', 1);
+=======
+>>>>>>> old2/master
 	case 'production':
 		ini_set('display_errors', 0);
 		if (version_compare(PHP_VERSION, '5.3', '>='))
@@ -181,6 +184,10 @@ switch (ENVIRONMENT)
 	// $assign_to_config['name_of_config_item'] = 'value of config item';
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> old2/master
 // --------------------------------------------------------------------
 // END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
 // --------------------------------------------------------------------

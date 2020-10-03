@@ -11,3 +11,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |	https://codeigniter.com/user_guide/general/hooks.html
 |
 */
+<<<<<<< HEAD
+=======
+$hook['pre_controller'] = array(
+    'class'    => 'Blocker',
+    'function' => 'requestBlocker',
+    'filename' => 'Blocker.php',
+    'filepath' => 'hooks',
+    'params'   => ""
+);
+>>>>>>> old2/master

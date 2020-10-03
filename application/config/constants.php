@@ -104,4 +104,51 @@ define('SMTP_HOST',                             'Your smtp host');		// your smtp
 define('SMTP_PORT',                             '25');					// your smtp port e.g. 25, 587
 define('SMTP_USER',                             'Your smtp user');		// your smtp user
 define('SMTP_PASS',                             'Your smtp password');	// your smtp password
+<<<<<<< HEAD
 define('MAIL_PATH',                             '/usr/sbin/sendmail');
+=======
+define('MAIL_PATH',                             '/usr/sbin/sendmail');
+
+/**
+ * ****** APPLICATION CONSTANTS ******
+ */
+// define ( 'VER', '1.0.0.1' );
+define ( 'VER', '1.0.0.2' );
+
+/**
+ * ****** PATH CONSTANTS *************
+ */
+define ( 'ASSETS', 'assets/' );
+define ( 'UPLOAD_PROFILE', 'uploads/' );
+define ( 'IMAGES', 'uploads/images/' );
+define ( 'EXCEL_FILE', 'uploads/excel/' );
+define ( 'WEBSITE_CAPTURE', 'uploads/captures/' );
+define ( 'MOBILE', 'mobile/' );
+define ( 'BROWSER', 'browser/' );
+define ( 'PLUGINS_FULL', 'assets/plugins/' );
+define ( 'ATTACHMENT_PATH', 'uploads/attachments/' );
+
+/**
+ * ****** OTHER CONSTANTS ************
+ */
+define ( 'CAPTURE_MOBILE', 'CM' );
+define ( 'CAPTURE_BROWSER', 'CB' );
+define ( 'MOBILE_UA', 'Mozilla/5.0 (Linux; Android 4.4.2; XT1033 Build/KXB20.25-1.31) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.136 Mobile Safari/537.36' );
+define ( 'BROWSER_UA', 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36' );
+
+/**
+ * ****** SERVICE STATUS *************
+ */
+define ( 'RAW', '1' );
+define ( 'PROCESSED', '2' );
+define ( 'FINALS', '3' );
+define ( 'DEAD', '4' );
+define ( 'INREVIEW', '5' );
+
+
+/**
+ * ****** API Keys *******************
+ */
+define ( 'GMAP_API_KEY', 'AIzaSyAmiVf-dkxWQLPMxiwnH2VO1nnI0wx2orA' );
+define ( "GEO_CODE_URL", "https://maps.googleapis.com/maps/api/geocode/json?address=");
+>>>>>>> old2/master

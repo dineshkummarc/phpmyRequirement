@@ -19,6 +19,10 @@ class User_model extends CI_Model
             $this->db->where($likeCriteria);
         }
         $this->db->where('BaseTbl.isDeleted', 0);
+<<<<<<< HEAD
+=======
+        $this->db->where('BaseTbl.roleId !=', 1);
+>>>>>>> old2/master
         $query = $this->db->get();
         
         return $query->num_rows();
@@ -43,6 +47,10 @@ class User_model extends CI_Model
             $this->db->where($likeCriteria);
         }
         $this->db->where('BaseTbl.isDeleted', 0);
+<<<<<<< HEAD
+=======
+        $this->db->where('BaseTbl.roleId !=', 1);
+>>>>>>> old2/master
         $this->db->limit($page, $segment);
         $query = $this->db->get();
         
@@ -58,6 +66,10 @@ class User_model extends CI_Model
     {
         $this->db->select('roleId, role');
         $this->db->from('tbl_roles');
+<<<<<<< HEAD
+=======
+        $this->db->where('roleId !=', 1);
+>>>>>>> old2/master
         $query = $this->db->get();
         
         return $query->result();
@@ -110,6 +122,10 @@ class User_model extends CI_Model
         $this->db->select('userId, name, email, mobile, roleId');
         $this->db->from('tbl_users');
         $this->db->where('isDeleted', 0);
+<<<<<<< HEAD
+=======
+		$this->db->where('roleId !=', 1);
+>>>>>>> old2/master
         $this->db->where('userId', $userId);
         $query = $this->db->get();
         
@@ -186,6 +202,7 @@ class User_model extends CI_Model
 
 
     /**
+<<<<<<< HEAD
      * This function is used to get user log history count
      * @param number $userId : This is user id
      */
@@ -233,6 +250,63 @@ class User_model extends CI_Model
             $result = $query->result();
             return $result;
         }
+=======
+     * This function is used to get user login history
+     * @param number $userId : This is user id
+     */
+    function loginHistoryCount($userId, $searchText, $fromDate, $toDate)
+    {
+        $this->db->select('BaseTbl.userId, BaseTbl.sessionData, BaseTbl.machineIp, BaseTbl.userAgent, BaseTbl.agentString, BaseTbl.platform, BaseTbl.createdDtm');
+        if(!empty($searchText)) {
+            $likeCriteria = "(BaseTbl.email  LIKE '%".$searchText."%')";
+            $this->db->where($likeCriteria);
+        }
+        if(!empty($fromDate)) {
+            $likeCriteria = "DATE_FORMAT(BaseTbl.createdDtm, '%Y-%m-%d' ) >= '".date('Y-m-d', strtotime($fromDate))."'";
+            $this->db->where($likeCriteria);
+        }
+        if(!empty($toDate)) {
+            $likeCriteria = "DATE_FORMAT(BaseTbl.createdDtm, '%Y-%m-%d' ) <= '".date('Y-m-d', strtotime($toDate))."'";
+            $this->db->where($likeCriteria);
+        }
+        $this->db->where('BaseTbl.userId', $userId);
+        $this->db->from('tbl_last_login as BaseTbl');
+        $query = $this->db->get();
+        
+        return $query->num_rows();
+    }
+
+    /**
+     * This function is used to get user login history
+     * @param number $userId : This is user id
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
+    function loginHistory($userId, $searchText, $fromDate, $toDate, $page, $segment)
+    {
+        $this->db->select('BaseTbl.userId, BaseTbl.sessionData, BaseTbl.machineIp, BaseTbl.userAgent, BaseTbl.agentString, BaseTbl.platform, BaseTbl.createdDtm');
+        $this->db->from('tbl_last_login as BaseTbl');
+        if(!empty($searchText)) {
+            $likeCriteria = "(BaseTbl.email  LIKE '%".$searchText."%')";
+            $this->db->where($likeCriteria);
+        }
+        if(!empty($fromDate)) {
+            $likeCriteria = "DATE_FORMAT(BaseTbl.createdDtm, '%Y-%m-%d' ) >= '".date('Y-m-d', strtotime($fromDate))."'";
+            $this->db->where($likeCriteria);
+        }
+        if(!empty($toDate)) {
+            $likeCriteria = "DATE_FORMAT(BaseTbl.createdDtm, '%Y-%m-%d' ) <= '".date('Y-m-d', strtotime($toDate))."'";
+            $this->db->where($likeCriteria);
+        }
+        $this->db->where('BaseTbl.userId', $userId);
+        $this->db->order_by('BaseTbl.id', 'DESC');
+        $this->db->limit($page, $segment);
+        $query = $this->db->get();
+        
+        $result = $query->result();        
+        return $result;
+>>>>>>> old2/master
     }
 
     /**
@@ -251,6 +325,7 @@ class User_model extends CI_Model
         return $query->row();
     }
 
+<<<<<<< HEAD
     /**
      * This function is used to get tasks
      */
@@ -464,6 +539,8 @@ class User_model extends CI_Model
 
         return $query->row();
     }
+=======
+>>>>>>> old2/master
 }
 
   

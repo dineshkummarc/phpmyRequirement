@@ -6,7 +6,11 @@
  *
  * This content is released under the MIT License (MIT)
  *
+<<<<<<< HEAD
  * Copyright (c) 2014 - 2018, British Columbia Institute of Technology
+=======
+ * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+>>>>>>> old2/master
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +33,11 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
+<<<<<<< HEAD
  * @copyright	Copyright (c) 2014 - 2018, British Columbia Institute of Technology (http://bcit.ca/)
+=======
+ * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
+>>>>>>> old2/master
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 2.0
@@ -198,12 +206,16 @@ class CI_Cache_memcached extends CI_Driver {
 	 */
 	public function increment($id, $offset = 1)
 	{
+<<<<<<< HEAD
 		if (($result = $this->_memcached->increment($id, $offset)) === FALSE)
 		{
 			return $this->_memcached->add($id, $offset) ? $offset : FALSE;
 		}
 
 		return $result;
+=======
+		return $this->_memcached->increment($id, $offset);
+>>>>>>> old2/master
 	}
 
 	// ------------------------------------------------------------------------
@@ -217,12 +229,16 @@ class CI_Cache_memcached extends CI_Driver {
 	 */
 	public function decrement($id, $offset = 1)
 	{
+<<<<<<< HEAD
 		if (($result = $this->_memcached->decrement($id, $offset)) === FALSE)
 		{
 			return $this->_memcached->add($id, 0) ? 0 : FALSE;
 		}
 
 		return $result;
+=======
+		return $this->_memcached->decrement($id, $offset);
+>>>>>>> old2/master
 	}
 
 	// ------------------------------------------------------------------------

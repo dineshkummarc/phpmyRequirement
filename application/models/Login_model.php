@@ -10,17 +10,28 @@ class Login_model extends CI_Model
      */
     function loginMe($email, $password)
     {
+<<<<<<< HEAD
         $this->db->select('BaseTbl.userId, BaseTbl.password, BaseTbl.name,BaseTbl.status,BaseTbl.roleId, Roles.role');
+=======
+        $this->db->select('BaseTbl.userId, BaseTbl.password, BaseTbl.name, BaseTbl.roleId, Roles.role');
+>>>>>>> old2/master
         $this->db->from('tbl_users as BaseTbl');
         $this->db->join('tbl_roles as Roles','Roles.roleId = BaseTbl.roleId');
         $this->db->where('BaseTbl.email', $email);
         $this->db->where('BaseTbl.isDeleted', 0);
         $query = $this->db->get();
         
+<<<<<<< HEAD
         $user = $query->result();
         
         if(!empty($user)){
             if(verifyHashedPassword($password, $user[0]->password)){
+=======
+        $user = $query->row();
+        
+        if(!empty($user)){
+            if(verifyHashedPassword($password, $user->password)){
+>>>>>>> old2/master
                 return $user;
             } else {
                 return array();
@@ -94,7 +105,11 @@ class Login_model extends CI_Model
         $this->db->where('email', $email);
         $this->db->where('activation_id', $activation_id);
         $query = $this->db->get();
+<<<<<<< HEAD
         return $query->num_rows;
+=======
+        return $query->num_rows();
+>>>>>>> old2/master
     }
 
     // This function used to create new password by reset link
@@ -110,10 +125,17 @@ class Login_model extends CI_Model
      * This function used to save login information of user
      * @param array $loginInfo : This is users login information
      */
+<<<<<<< HEAD
     function loginsert($logInfo)
     {
         $this->db->trans_start();
         $this->db->insert('tbl_log', $logInfo);
+=======
+    function lastLogin($loginInfo)
+    {
+        $this->db->trans_start();
+        $this->db->insert('tbl_last_login', $loginInfo);
+>>>>>>> old2/master
         $this->db->trans_complete();
     }
 
@@ -128,7 +150,11 @@ class Login_model extends CI_Model
         $this->db->where('BaseTbl.userId', $userId);
         $this->db->order_by('BaseTbl.id', 'DESC');
         $this->db->limit(1);
+<<<<<<< HEAD
         $query = $this->db->get('tbl_log as BaseTbl');
+=======
+        $query = $this->db->get('tbl_last_login as BaseTbl');
+>>>>>>> old2/master
 
         return $query->row();
     }
