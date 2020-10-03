@@ -19,6 +19,9 @@ Import
 CustomerListing
 ![CustomerListing.png](https://github.com/dineshkummarc/RequirementAnalysis/blob/master/uploads/screenshots/CustomerListing.png)
 
+Report
+![employeeReport.png](https://github.com/dineshkummarc/RequirementAnalysis/blob/master/uploads/screenshots/employeeReport.png)
+
 Caching
 ![caching.png](https://github.com/dineshkummarc/RequirementAnalysis/blob/master/uploads/screenshots/caching.png)
 
