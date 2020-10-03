@@ -484,7 +484,7 @@ class SeoReport{
 		if (! empty ( $htmlInfo )) {
 			// set document information
 			$pdf->SetCreator ( PDF_CREATOR );
-			$pdf->SetAuthor ( 'CodeInsect' );
+			$pdf->SetAuthor ( 'DINESHKUMMARC' );
 			$pdf->SetTitle ( "SEO Report" );
 			$pdf->SetSubject ( 'SEO Report For ' );
 
@@ -492,7 +492,7 @@ class SeoReport{
 
 			// set default header data
 			// $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 006', PDF_HEADER_STRING);
-			$pdf->SetHeaderData ( $logo, 10, $for, "by CodeInsect" );
+			$pdf->SetHeaderData ( $logo, 10, $for, "by DINESHKUMMARC" );
 
 			// set header and footer fonts
 			$pdf->setHeaderFont ( Array (
