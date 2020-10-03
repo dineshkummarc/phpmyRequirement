@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>CodeInsect</title>
+	<title>DINESHKUMMARC</title>
 </head>
 <body>
 	<div>
@@ -78,10 +78,10 @@
 														</table>
 														<div style="min-height:28px"></div>
 														<div style="text-align:center;padding:0 6% 24px;text-align:center;font-size:12px;line-height:18px;color:#555">
-    														You are receiving this email from CodeInsect, because you
+    														You are receiving this email from DINESHKUMMARC, because you
     														<span class="il"> subscribed </span>
-    														 <a style="color:#555;font-weight:normal;text-decoration:underline" href="http://tinllc.com" target="_blank"> CodeInsect</a>
-    														 with this email address.<br><br> Copyright CodeInsect 2017 - All Rights Reserved
+    														 <a style="color:#555;font-weight:normal;text-decoration:underline" href="http://tinllc.com" target="_blank"> DINESHKUMMARC</a>
+    														 with this email address.<br><br> Copyright DINESHKUMMARC 2017 - All Rights Reserved
 														</div>
 													</td>
 												</tr>
