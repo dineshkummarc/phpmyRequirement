@@ -14,7 +14,8 @@
     <link href="<?php echo base_url()."assets/dist/css/AdminLTE.min.css?".VER; ?>" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
-    <link href="<?php echo base_url()."assets/dist/css/skins/_all-skins.min.css?".VER; ?>" rel="stylesheet" type="text/css" />
+    <!-- <link href="<?php echo base_url()."assets/dist/css/skins/_all-skins.min.css?".VER; ?>" rel="stylesheet" type="text/css" /> -->
+    <link href="<?php echo base_url()."assets/dist/css/skins/skin-red.min.css?".VER; ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo $plugins."datepicker/datepicker3.css?".VER; ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo $plugins."datepicker/datepicker3.css?".VER; ?>" rel="stylesheet" type="text/css" />
     <link href="<?php echo $plugins."timepicker/bootstrap-timepicker.min.css?".VER; ?>" rel="stylesheet" type="text/css" >
