@@ -20,7 +20,6 @@ if(!empty($rawData))
     }
 }
 
-
 ?>
 
 <div class="content-wrapper">
