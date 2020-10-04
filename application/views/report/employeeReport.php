@@ -8,7 +8,7 @@
     </section>
     <section class="content">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-12">
               <!-- general form elements -->
                 <div class="box box-primary">
                     <div class="box-header">
@@ -18,7 +18,7 @@
                     <form role="form" id="employeeReportForm" action="<?php echo base_url() ?>generateEmployeeReport" method="post">
                         <div class="box-body">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                     	<label>Employee</label>
                                         <select id="employees" name="employees" class="form-control">
@@ -35,7 +35,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-4">
                                     <div class="form-group">
 										<label>Date</label>
 										<div class="input-group date">
