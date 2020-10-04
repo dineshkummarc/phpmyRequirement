@@ -4,7 +4,7 @@
         <div class="pull-right hidden-xs">
           <b>DINESHKUMMARC</b> RequirementAnalysis | Version 2.0
         </div>
-        <strong>Copyright &copy; 2020-2021 <a href="<?php echo base_url(); ?>dashboard">DINESHKUMMARC</a>.</strong> All rights reserved.
+        <strong>Copyright &copy;  <a href="<?php echo base_url(); ?>dashboard">DINESHKUMMARC</a>.</strong> All rights reserved.
     </footer>
     
     <!-- jQuery UI 1.11.2 -->
