@@ -81,7 +81,7 @@
     														You are receiving this email from RequirementAnalysis, because you
     														<span class="il"> subscribed </span>
     														 <a style="color:#555;font-weight:normal;text-decoration:underline" href="http://tinllc.com" target="_blank"> RequirementAnalysis</a>
-    														 with this email address.<br><br> Copyright RequirementAnalysis 2020 - All Rights Reserved
+    														 with this email address.<br><br> Copyright &copy; RequirementAnalysis <?php echo @date('Y'); ?> - All Rights Reserved
 														</div>
 													</td>
 												</tr>
