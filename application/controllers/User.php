@@ -34,6 +34,7 @@ class User extends BaseController
 		$data ["processedCount"] = $this->cms_model->getCustomerCountByStatus ( PROCESSED, $this->role, $this->vendorId );
 		$data ["rawCount"] = $this->cms_model->getCustomerCountByStatus ( RAW, $this->role, $this->vendorId );
 		$data ["deadCount"] = $this->cms_model->getCustomerCountByStatus ( DEAD, $this->role, $this->vendorId );
+		$data ["inReviewCount"] = $this->cms_model->getCustomerCountByStatus ( INREVIEW, $this->role, $this->vendorId );
 		
 		$data ["notAssignedCount"] = $this->cms_model->getCustomerCountByAssignement ( 0, 0 );
 		$data ["assignedCount"] = $this->cms_model->getCustomerCountByAssignement ( 1, 0 );
