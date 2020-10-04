@@ -1,9 +1,7 @@
 <?php if (! defined ( 'BASEPATH' ))	exit ( 'No direct script access allowed' );
 
-// require APPPATH . '/third_party/vendor/autoload.php';
-require_once(APPPATH.'/third_party/tcpdf/tcpdf.php');
-// require APPPATH . '/libraries/mypdf.php';
-require_once(APPPATH.'/third_party/tcpdf/mypdf.php');
+require APPPATH . '/third_party/vendor/autoload.php';
+require APPPATH . '/libraries/mypdf.php';
 
 /**
  * Class Seo_Report
@@ -484,7 +482,7 @@ class SeoReport{
 		if (! empty ( $htmlInfo )) {
 			// set document information
 			$pdf->SetCreator ( PDF_CREATOR );
-			$pdf->SetAuthor ( 'DINESHKUMMARC' );
+			$pdf->SetAuthor ( 'CodeInsect' );
 			$pdf->SetTitle ( "SEO Report" );
 			$pdf->SetSubject ( 'SEO Report For ' );
 
@@ -492,7 +490,7 @@ class SeoReport{
 
 			// set default header data
 			// $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 006', PDF_HEADER_STRING);
-			$pdf->SetHeaderData ( $logo, 10, $for, "by DINESHKUMMARC" );
+			$pdf->SetHeaderData ( $logo, 10, $for, "by CodeInsect" );
 
 			// set header and footer fonts
 			$pdf->setHeaderFont ( Array (

@@ -1,7 +1,6 @@
 <?php defined ( 'BASEPATH' ) or exit ( 'No direct script access allowed' );
 
-// require APPPATH . '/third_party/vendor/autoload.php';
-require_once(APPPATH.'/third_party/screen/autoload.php');
+require APPPATH . '/third_party/vendor/autoload.php';
 
 /**
  * Class : BaseController
@@ -79,7 +78,7 @@ class BaseController extends CI_Controller {
 	 * This function is used to load the set of views
 	 */
 	function loadThis() {
-		$this->global ['pageTitle'] = 'DINESHKUMMARC : Access Denied';
+		$this->global ['pageTitle'] = 'CodeInsect : Access Denied';
 		
 		$this->load->view ( 'includes/header', $this->global );
 		$this->load->view ( 'access' );
