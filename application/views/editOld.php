@@ -18,7 +18,6 @@ if(!empty($userInfo))
     }
 }
 
-
 ?>
 
 <div class="content-wrapper">
