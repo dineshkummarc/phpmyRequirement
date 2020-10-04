@@ -4,7 +4,8 @@
         <div class="pull-right hidden-xs">
           <b>DINESHKUMMARC</b> RequirementAnalysis | Version 2.0
         </div>
-        <strong>Copyright &copy;  <a href="<?php echo base_url(); ?>dashboard">DINESHKUMMARC</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; <strong><?php echo @date('Y'); ?></strong> <a href="<?php echo base_url(); ?>dashboard">DINESHKUMMARC</a>.</strong> All rights reserved.
+        <p class="footer">Page time: <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter: V<strong>' . CI_VERSION . '</strong>' : '' ?></p>
     </footer>
     
     <!-- jQuery UI 1.11.2 -->
