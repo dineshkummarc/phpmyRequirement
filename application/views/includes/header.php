@@ -43,9 +43,9 @@
         <!-- Logo -->
         <a id="lnkLogo" href="<?php echo base_url(); ?>dashboard" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>F</b>B</span>
+          <span class="logo-mini"><b>R</b>A</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Feed</b>Backer</span>
+          <span class="logo-lg"><b>Requirement</b>Analysis</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -111,6 +111,17 @@
                 <i class="fa fa-bell-o"></i><span>Follow Ups</span>
               </a>
             </li>
+            <li class="treeview">
+              <a id="lnkCalender" href="#">
+                <i class="fa fa-gear"></i>
+                <span> Calender</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu menu-open">
+                <li><a id="lnkCalenderListing" href="<?php echo base_url(); ?>calender"><i class="fa fa-circle-o"></i> Calender</a></li>
+                <li><a id="lnkCallListing" href="<?php echo base_url(); ?>callListing"><i class="fa fa-circle-o"></i> Calls</a></li>
+              </ul>
+            </li>
             <?php
             }
             ?>
@@ -124,6 +135,36 @@
                 <i class="fa fa-dashboard"></i> <span>Import</span>
               </a>
             </li>
+            <li class="treeview">
+              <a id="lnkCalender" href="#">
+                <i class="fa fa-gear"></i>
+                <span> Calender</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu menu-open">
+                <li><a id="lnkCalenderListing" href="<?php echo base_url(); ?>calender"><i class="fa fa-circle-o"></i> Calender</a></li>
+                <li><a id="lnkCallListing" href="<?php echo base_url(); ?>callListing"><i class="fa fa-circle-o"></i> Calls</a></li>
+              </ul>
+            </li>			
+			<li class="treeview">
+              <a id="lnkCMS" href="#">
+                <i class="fa fa-gear"></i>
+                <span>Config & Settings</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu menu-open">
+                <li><a id="lnkEmailTemplates" href="<?php echo base_url(); ?>emailTemplates"><i class="fa fa-circle-o"></i> Email Templates</a></li>
+                <li><a id="lnkCompanyListing" href="<?php echo base_url(); ?>companyListing"><i class="fa fa-circle-o"></i> Company List</a></li>
+                <li><a id="lnkAttachmentListing" href="<?php echo base_url(); ?>attachmentListing"><i class="fa fa-circle-o"></i> Attachments</a></li>
+				<li><a id="lnkCronListing" href="<?php echo base_url(); ?>cron"><i class="fa fa-circle-o"></i> Cron Job</a></li>
+               <li><a id="lnkAttachmentListing" href="<?php echo base_url(); ?>updateAttachment"><i class="fa fa-circle-o"></i> Update Attachments</a></li>
+			   <li><a id="lnkRole" href="<?php echo base_url(); ?>role"><i class="fa fa-circle-o"></i> Roles</a></li>
+				<li><a id="lnkpackages" href="<?php echo base_url(); ?>packages"><i class="fa fa-circle-o"></i> Packages</a></li>
+				<li><a id="lnkfeedbacktypes" href="<?php echo base_url(); ?>feedbacktypes"><i class="fa fa-circle-o"></i> Feedback Types</a></li>
+				<li><a id="lnkattachmenttypes" href="<?php echo base_url(); ?>attachmenttypes"><i class="fa fa-circle-o"></i> Attachment Types</a></li>
+              </ul>
+            </li>
+			
             <li class="treeview">
               <a id="lnkUnassignedCustomers" href="<?php echo base_url(); ?>unassignCustomers">
                 <i class="fa fa-users"></i><span>Assign Customers</span>
@@ -163,18 +204,6 @@
             if($role == ROLE_ADMIN)
             {
             ?>
-            <li class="treeview">
-              <a id="lnkCMS" href="#">
-                <i class="fa fa-gear"></i>
-                <span>CMS</span>
-                <i class="fa fa-angle-left pull-right"></i>
-              </a>
-              <ul class="treeview-menu menu-open">
-                <li><a id="lnkEmailTemplates" href="<?php echo base_url(); ?>emailTemplates"><i class="fa fa-circle-o"></i> Email Templates</a></li>
-                <li><a id="lnkCompanyListing" href="<?php echo base_url(); ?>companyListing"><i class="fa fa-circle-o"></i> Company List</a></li>
-                <li><a id="lnkAttachmentListing" href="<?php echo base_url(); ?>attachmentListing"><i class="fa fa-circle-o"></i> Attachments</a></li>
-              </ul>
-            </li>
             <li class="treeview">
               <a id="lnkCaching" href="<?php echo base_url(); ?>caching">
                 <i class="fa fa-refresh"></i>
