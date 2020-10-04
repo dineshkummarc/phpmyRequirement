@@ -1,7 +1,6 @@
 <?php if(!defined('BASEPATH')) exit('No direct script access allowed');
 
-//require APPPATH . '/libraries/BaseController.php';
-require_once(APPPATH.'/libraries/BaseController.php');
+require APPPATH . '/libraries/BaseController.php';
 
 /**
  * Class : User (UserController)
@@ -28,13 +27,12 @@ class User extends BaseController
      */
     public function index()
     {
-        $this->global['pageTitle'] = 'RequirementAnalysis : Dashboard';
+        $this->global['pageTitle'] = 'Feedbacker : Dashboard';
 
 		$data ["finalizeCount"] = $this->cms_model->getCustomerCountByStatus ( FINALS, $this->role, $this->vendorId );
 		$data ["processedCount"] = $this->cms_model->getCustomerCountByStatus ( PROCESSED, $this->role, $this->vendorId );
 		$data ["rawCount"] = $this->cms_model->getCustomerCountByStatus ( RAW, $this->role, $this->vendorId );
 		$data ["deadCount"] = $this->cms_model->getCustomerCountByStatus ( DEAD, $this->role, $this->vendorId );
-        $data ["inReviewCount"] = $this->cms_model->getCustomerCountByStatus ( INREVIEW, $this->role, $this->vendorId );
 		
 		$data ["notAssignedCount"] = $this->cms_model->getCustomerCountByAssignement ( 0, 0 );
 		$data ["assignedCount"] = $this->cms_model->getCustomerCountByAssignement ( 1, 0 );
@@ -69,7 +67,7 @@ class User extends BaseController
             
             $data['userRecords'] = $this->user_model->userListing($searchText, $returns["page"], $returns["segment"]);
             
-            $this->global['pageTitle'] = 'DINESHKUMMARC : User Listing';
+            $this->global['pageTitle'] = 'CodeInsect : User Listing';
             
             $this->loadViews("users", $this->global, $data, NULL);
         }
@@ -89,7 +87,7 @@ class User extends BaseController
             $this->load->model('user_model');
             $data['roles'] = $this->user_model->getUserRoles();
             
-            $this->global['pageTitle'] = 'DINESHKUMMARC : Add New User';
+            $this->global['pageTitle'] = 'CodeInsect : Add New User';
 
             $this->loadViews("addNew", $this->global, $data, NULL);
         }
@@ -186,7 +184,7 @@ class User extends BaseController
             $data['roles'] = $this->user_model->getUserRoles();
             $data['userInfo'] = $this->user_model->getUserInfo($userId);
             
-            $this->global['pageTitle'] = 'DINESHKUMMARC : Edit User';
+            $this->global['pageTitle'] = 'CodeInsect : Edit User';
             
             $this->loadViews("editOld", $this->global, $data, NULL);
         }
@@ -285,7 +283,7 @@ class User extends BaseController
      */
     function loadChangePass()
     {
-        $this->global['pageTitle'] = 'DINESHKUMMARC : Change Password';
+        $this->global['pageTitle'] = 'CodeInsect : Change Password';
         
         $this->loadViews("changePassword", $this->global, NULL, NULL);
     }
@@ -338,7 +336,7 @@ class User extends BaseController
      */
     function pageNotFound()
     {
-        $this->global['pageTitle'] = 'DINESHKUMMARC : 404 - Page Not Found';
+        $this->global['pageTitle'] = 'CodeInsect : 404 - Page Not Found';
         
         $this->loadViews("404", $this->global, NULL, NULL);
     }
@@ -375,7 +373,7 @@ class User extends BaseController
 
             $data['userRecords'] = $this->user_model->loginHistory($userId, $searchText, $fromDate, $toDate, $returns["page"], $returns["segment"]);
             
-            $this->global['pageTitle'] = 'DINESHKUMMARC : User Login History';
+            $this->global['pageTitle'] = 'CodeInsect : User Login History';
             
             $this->loadViews("loginHistory", $this->global, $data, NULL);
         }        

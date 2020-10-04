@@ -1,11 +1,9 @@
 <?php if(!defined('BASEPATH')) exit('No direct script access allowed');
 
-// require APPPATH . '/libraries/BaseController.php';
-require_once(APPPATH.'/libraries/BaseController.php');
-// require APPPATH . '/third_party/vendor/autoload.php';
-require_once(APPPATH.'/third_party/tcpdf/tcpdf.php');
-// require APPPATH . '/libraries/mypdf.php';
-require_once(APPPATH.'/third_party/tcpdf/mypdf.php');
+
+require APPPATH . '/libraries/BaseController.php';
+require APPPATH . '/third_party/vendor/autoload.php';
+require APPPATH . '/libraries/mypdf.php';
 
 /**
  * @filesource : Report.php
@@ -32,7 +30,7 @@ class Report extends BaseController{
 			$this->loadThis ();
 		} else {
 			$data["activeEmployees"] = $this->report_model->getActiveEmployees();
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Empoyee-wise Report';
+			$this->global ['pageTitle'] = 'Feedbacker : Empoyee-wise Report';
 			$this->loadViews("report/employeeReport", $this->global, $data, NULL);
 		}
 	}
@@ -81,7 +79,7 @@ class Report extends BaseController{
 		$pdf = new MYPDF ( PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false );
 		
 		$pdf->SetCreator ( PDF_CREATOR );
-		$pdf->SetAuthor ( 'DINESHKUMMARC' );
+		$pdf->SetAuthor ( 'CodeInsect' );
 		$pdf->SetTitle ( "Followup Report" );
 		$pdf->SetSubject ( 'Followup Report for ' );
 	

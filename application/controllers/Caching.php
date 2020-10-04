@@ -1,7 +1,6 @@
 <?php if (! defined ( 'BASEPATH' )) exit ( 'No direct script access allowed' );
 
-// require APPPATH . '/libraries/BaseController.php';
-require_once(APPPATH.'/libraries/BaseController.php');
+require APPPATH . '/libraries/BaseController.php';
 
 
 class Caching extends BaseController {
@@ -18,7 +17,7 @@ class Caching extends BaseController {
 			$this->loadThis ();
 		} else {
 			
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Cache Management';
+			$this->global ['pageTitle'] = 'Feedbacker : Cache Management';
 			$this->loadViews("caching", $this->global, NULL, NULL);
 		}
 	}

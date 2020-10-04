@@ -244,7 +244,7 @@ class Login extends CI_Controller
             else
             {
                 $status = 'error';
-                $message = 'Password change failed';
+                $message = 'Password changed failed';
             }
             
             setFlashData($status, $message);

@@ -3,8 +3,7 @@
 if (! defined ( 'BASEPATH' ))
 	exit ( 'No direct script access allowed' );
 
-// require APPPATH . '/libraries/BaseController.php';
-require_once(APPPATH.'/libraries/BaseController.php');
+require APPPATH . '/libraries/BaseController.php';
 class Cms extends BaseController {
 	/**
 	 * This is default constructor of the class
@@ -51,7 +50,7 @@ class Cms extends BaseController {
 			
 			$data ['rawRecords'] = $this->cms_model->emailTemplates ( $searchText, $returns ["page"], $returns ["segment"] );
 			
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Email Templates';
+			$this->global ['pageTitle'] = 'Feedbacker : Email Templates';
 			
 			$this->loadViews("emailTemplates", $this->global, $data, NULL);
 		}
@@ -73,7 +72,7 @@ class Cms extends BaseController {
 				$data ["rawRecords"] = "Directory Access Forbidden";
 			}
 			
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Edit Email Templates';
+			$this->global ['pageTitle'] = 'Feedbacker : Edit Email Templates';
 			
 			$this->loadViews("editTemplate", $this->global, $data, NULL);
 		}
@@ -125,7 +124,7 @@ class Cms extends BaseController {
 			$returns = $this->paginationCompress ( "companyListing/", $count, 10 );
 			$data ['rawRecords'] = $this->cms_model->companyListing ( $searchText, $returns ["page"], $returns ["segment"] );
 
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Company Listing';
+			$this->global ['pageTitle'] = 'Feedbacker : Company Listing';
 			$this->loadViews("companyListing", $this->global, $data, NULL);
 		}
 	}
@@ -144,7 +143,7 @@ class Cms extends BaseController {
 			$returns = $this->paginationCompress ( "attachmentListing/", $count, 10 );
 			$data ['rawRecords'] = $this->cms_model->attachmentListing ( $searchText, $returns ["page"], $returns ["segment"] );
 			
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Attachment Listing';
+			$this->global ['pageTitle'] = 'Feedbacker : Attachment Listing';
 			$this->loadViews("attachmentListing", $this->global, $data, NULL);
 		}
 	}
@@ -162,7 +161,7 @@ class Cms extends BaseController {
 			$data ["attchmentTypes"] = $this->cms_model->getAttachmentTypes();
 			$data ["rawData"] = $this->cms_model->getAttachmentDataById ( $atId );
 			
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Edit Attachment';
+			$this->global ['pageTitle'] = 'Feedbacker : Edit Attachment';
 			$this->loadViews("editAttachment", $this->global, $data, NULL);
 		}
 	}
@@ -271,7 +270,7 @@ class Cms extends BaseController {
 			$data ["companyData"] = $this->cms_model->getCompanies();
 			$data ["attchmentTypes"] = $this->cms_model->getAttachmentTypes();
 			
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Add Attachment';
+			$this->global ['pageTitle'] = 'Feedbacker : Add Attachment';
 			$this->loadViews("addAttachment", $this->global, $data, NULL);
 		}
 	}

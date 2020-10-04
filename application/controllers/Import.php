@@ -1,12 +1,8 @@
 <?php if (! defined ( 'BASEPATH' )) exit ( 'No direct script access allowed' );
 
-// require APPPATH . '/libraries/BaseController.php';
-require_once(APPPATH.'/libraries/BaseController.php');
-require_once(APPPATH.'/third_party/tcpdf/tcpdf.php');
-// require APPPATH . '/libraries/mypdf.php';
-require_once(APPPATH.'/third_party/tcpdf/mypdf.php');
-// require APPPATH . '/third_party/vendor/autoload.php';
-require_once(APPPATH.'/third_party/spreadparser/autoload.php');
+require APPPATH . '/libraries/BaseController.php';
+require APPPATH . '/third_party/vendor/autoload.php';
+require APPPATH . '/libraries/mypdf.php';
 
 use Akeneo\Component\SpreadsheetParser\SpreadsheetParser;
 
@@ -55,7 +51,7 @@ class Import extends BaseController {
 			
 			$data ['countries'] = $this->import_model->getDistictCountries ();
 			
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Imported Data';
+			$this->global ['pageTitle'] = 'Feedbacker : Imported Data';
 			$this->loadViews("importedData", $this->global, $data, NULL);
 		}
 	}
@@ -67,7 +63,7 @@ class Import extends BaseController {
 		if ($this->isAdmin () == TRUE) {
 			$this->loadThis ();
 		} else {
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Import Raw Data';
+			$this->global ['pageTitle'] = 'Feedbacker : Import Raw Data';
 			$this->loadViews("importing", $this->global, NULL, NULL);
 		}
 	}
@@ -311,7 +307,7 @@ class Import extends BaseController {
 			$data ['executives'] = $this->import_model->getExecutives ();
 			$data ['countries'] = $this->import_model->getDistictCountries ();
 
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Assign Customers to Executives';
+			$this->global ['pageTitle'] = 'Feedbacker : Assign Customers to Executives';
 			$this->loadViews("assign", $this->global, $data, NULL);
 		}
 	}
@@ -377,7 +373,7 @@ class Import extends BaseController {
 			die; */
 		}
 		
-		$this->global ['pageTitle'] = 'RequirementAnalysis : Customer Details';
+		$this->global ['pageTitle'] = 'Feedbacker : Customer Details';
 		$this->loadViews("custDetails", $this->global, $data, NULL);
 	}
 	
@@ -401,7 +397,7 @@ class Import extends BaseController {
 			
 			$data ['rawRecords'] = $this->import_model->rawCustomerListing ( $searchText, NULL, $searchStatus, $returns ["page"], $returns ["segment"] );
 			
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Raw Customers Listing';
+			$this->global ['pageTitle'] = 'Feedbacker : Raw Customers Listing';
 			$data ["listType"] = "Raw";
 			$data ["paginationUrl"] = "rawCustomerListing/";
 			
@@ -426,7 +422,7 @@ class Import extends BaseController {
 		
 		$data ['rawRecords'] = $this->import_model->rawCustomerListing ( $searchText, $this->vendorId, $searchStatus, $returns ["page"], $returns ["segment"] );
 		
-		$this->global ['pageTitle'] = 'RequirementAnalysis : Raw Customers List';
+		$this->global ['pageTitle'] = 'Feedbacker : Raw Customers List';
 		$data ["listType"] = "Raw";
 		$data ["paginationUrl"] = "rawListing/";
 		
@@ -637,7 +633,7 @@ class Import extends BaseController {
 			foreach ( $requirements as $rc ) {
 				// set document information
 				$pdf->SetCreator ( PDF_CREATOR );
-				$pdf->SetAuthor ( 'DINESHKUMMARC' );
+				$pdf->SetAuthor ( 'CodeInsect' );
 				$pdf->SetTitle ( "" );
 				$pdf->SetSubject ( 'Requirement Document for ' );
 				
@@ -645,7 +641,7 @@ class Import extends BaseController {
 				
 				// set default header data
 				// $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE.' 006', PDF_HEADER_STRING);
-				$pdf->SetHeaderData ( $logo, 10, $rc->domain_name, "by DINESHKUMMARC" );
+				$pdf->SetHeaderData ( $logo, 10, $rc->domain_name, "by CodeInsect" );
 				
 				// set header and footer fonts
 				$pdf->setHeaderFont ( Array (
@@ -816,7 +812,7 @@ class Import extends BaseController {
 		
 			$data ['rawRecords'] = $this->import_model->followCustomerListing ( $searchText, $executiveId, $toDate, $searchStatus, $returns["page"], $returns["segment"] );
 		
-			$this->global ['pageTitle'] = 'RequirementAnalysis : Followup Customers Data';
+			$this->global ['pageTitle'] = 'Feedbacker : Followup Customers Data';
 			$data ["listType"] = "Follow Up";
 			$data ["paginationUrl"] = "followCustomerListing/";
 			
@@ -848,7 +844,7 @@ class Import extends BaseController {
 		
 		$data ['rawRecords'] = $this->import_model->followCustomerListing ( $searchText, $this->vendorId, $toDate, $searchStatus, $returns ["page"], $returns ["segment"] );
 		
-		$this->global ['pageTitle'] = 'RequirementAnalysis : Followup Customers Data';
+		$this->global ['pageTitle'] = 'Feedbacker : Followup Customers Data';
 		$data ["listType"] = "Follow Up";
 		$data ["paginationUrl"] = "followListing/";
 		
