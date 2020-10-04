@@ -1,7 +1,7 @@
 <?php if (! defined ( 'BASEPATH' )) exit ( 'No direct script access allowed' );
 
-require APPPATH . '/libraries/BaseController.php';
-
+// require APPPATH . '/libraries/BaseController.php';
+require_once(APPPATH.'/libraries/BaseController.php');
 
 class Caching extends BaseController {
 	/**
