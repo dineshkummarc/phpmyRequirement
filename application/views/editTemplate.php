@@ -16,7 +16,6 @@ if(!empty($rawRecords))
     }
 }
 
-
 ?>
 
 <div class="content-wrapper">
