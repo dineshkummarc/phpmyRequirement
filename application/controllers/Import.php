@@ -55,7 +55,7 @@ class Import extends BaseController {
 			
 			$data ['countries'] = $this->import_model->getDistictCountries ();
 			
-			$this->global ['pageTitle'] = 'Feedbacker : Imported Data';
+			$this->global ['pageTitle'] = 'RequirementAnalysis : Imported Data';
 			$this->loadViews("importedData", $this->global, $data, NULL);
 		}
 	}
@@ -67,7 +67,7 @@ class Import extends BaseController {
 		if ($this->isAdmin () == TRUE) {
 			$this->loadThis ();
 		} else {
-			$this->global ['pageTitle'] = 'Feedbacker : Import Raw Data';
+			$this->global ['pageTitle'] = 'RequirementAnalysis : Import Raw Data';
 			$this->loadViews("importing", $this->global, NULL, NULL);
 		}
 	}
@@ -311,7 +311,7 @@ class Import extends BaseController {
 			$data ['executives'] = $this->import_model->getExecutives ();
 			$data ['countries'] = $this->import_model->getDistictCountries ();
 
-			$this->global ['pageTitle'] = 'Feedbacker : Assign Customers to Executives';
+			$this->global ['pageTitle'] = 'RequirementAnalysis : Assign Customers to Executives';
 			$this->loadViews("assign", $this->global, $data, NULL);
 		}
 	}
@@ -377,7 +377,7 @@ class Import extends BaseController {
 			die; */
 		}
 		
-		$this->global ['pageTitle'] = 'Feedbacker : Customer Details';
+		$this->global ['pageTitle'] = 'RequirementAnalysis : Customer Details';
 		$this->loadViews("custDetails", $this->global, $data, NULL);
 	}
 	
@@ -401,7 +401,7 @@ class Import extends BaseController {
 			
 			$data ['rawRecords'] = $this->import_model->rawCustomerListing ( $searchText, NULL, $searchStatus, $returns ["page"], $returns ["segment"] );
 			
-			$this->global ['pageTitle'] = 'Feedbacker : Raw Customers Listing';
+			$this->global ['pageTitle'] = 'RequirementAnalysis : Raw Customers Listing';
 			$data ["listType"] = "Raw";
 			$data ["paginationUrl"] = "rawCustomerListing/";
 			
@@ -426,7 +426,7 @@ class Import extends BaseController {
 		
 		$data ['rawRecords'] = $this->import_model->rawCustomerListing ( $searchText, $this->vendorId, $searchStatus, $returns ["page"], $returns ["segment"] );
 		
-		$this->global ['pageTitle'] = 'Feedbacker : Raw Customers List';
+		$this->global ['pageTitle'] = 'RequirementAnalysis : Raw Customers List';
 		$data ["listType"] = "Raw";
 		$data ["paginationUrl"] = "rawListing/";
 		
@@ -816,7 +816,7 @@ class Import extends BaseController {
 		
 			$data ['rawRecords'] = $this->import_model->followCustomerListing ( $searchText, $executiveId, $toDate, $searchStatus, $returns["page"], $returns["segment"] );
 		
-			$this->global ['pageTitle'] = 'Feedbacker : Followup Customers Data';
+			$this->global ['pageTitle'] = 'RequirementAnalysiss : Followup Customers Data';
 			$data ["listType"] = "Follow Up";
 			$data ["paginationUrl"] = "followCustomerListing/";
 			
@@ -848,7 +848,7 @@ class Import extends BaseController {
 		
 		$data ['rawRecords'] = $this->import_model->followCustomerListing ( $searchText, $this->vendorId, $toDate, $searchStatus, $returns ["page"], $returns ["segment"] );
 		
-		$this->global ['pageTitle'] = 'Feedbacker : Followup Customers Data';
+		$this->global ['pageTitle'] = 'RequirementAnalysis : Followup Customers Data';
 		$data ["listType"] = "Follow Up";
 		$data ["paginationUrl"] = "followListing/";
 		
