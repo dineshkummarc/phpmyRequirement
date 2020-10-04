@@ -139,7 +139,7 @@ define ( 'RAW', '1' );
 define ( 'PROCESSED', '2' );
 define ( 'FINALS', '3' );
 define ( 'DEAD', '4' );
-
+define ( 'INREVIEW', '5' );
 
 /**
  * ****** API Keys *******************
