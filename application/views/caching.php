@@ -2,13 +2,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Cache Management
-        <small>Delete cache of pages</small>
+        Cache Management <small>Delete cache of pages</small>
       </h1>
     </section>
     <section class="content">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <!-- general form elements -->
                 <div class="box box-primary">
                     <div class="box-header">
