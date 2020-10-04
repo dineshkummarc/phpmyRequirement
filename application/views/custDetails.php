@@ -117,7 +117,6 @@ if (! empty ( $reqCustomer )) {
 								case FINALS : ?><span class="label label-success">FINALS</span><?php break;
 								case DEAD : ?><span class="label label-danger">DEAD</span><?php break;
 								case PROCESSED : ?><span class="label label-info">PROCESSED</span><?php break;
-								case INREVIEW : ?><span class="label label-warning">INREVIEW</span><?php break;
 								default : ?><span class="label label-default">RAW</span><?php 
 							}
 						?>
@@ -333,9 +332,6 @@ if (! empty ( $reqCustomer )) {
 										<option
 											<?php if($status == DEAD) { echo "selected='selected'"; } ?>
 											value="<?php echo DEAD; ?>">Dead</option>
-										<option
-											<?php if($status == INREVIEW) { echo "selected='selected'"; } ?>
-											value="<?php echo INREVIEW; ?>">InReview</option>
 									</select>
 								</div>
 								<div class="col-md-2">

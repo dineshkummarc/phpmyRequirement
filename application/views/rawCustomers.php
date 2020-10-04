@@ -20,8 +20,6 @@
                             <?php if($searchStatus == FINALS) { echo "selected='selected'"; } ?>>Finals</option>
                         <option value="<?php echo DEAD; ?>"
                             <?php if($searchStatus == DEAD) { echo "selected='selected'"; } ?>>Dead</option>
-                        <option value="<?php echo INREVIEW; ?>"
-                            <?php if($searchStatus == INREVIEW) { echo "selected='selected'"; } ?>>InReview</option>
                     </select>
                 </div>
                 <div class="col-md-3">
@@ -79,7 +77,6 @@
                                         case FINALS : ?><span class="label label-success">FINALS</span><?php break;
                                         case DEAD : ?><span class="label label-danger">DEAD</span><?php break;
                                         case PROCESSED : ?><span class="label label-info">PROCESSED</span><?php break;
-                                        case INREVIEW : ?><span class="label label-warning">INREVIEW</span><?php break;
                                         default : ?><span class="label label-default">RAW</span><?php
                                     }
                                 ?>
@@ -132,10 +129,6 @@
         <div class="row">
             <div class="col-md-1"><span class="label label-danger">DEAD</span></div>
             <div class="col-md-4"><span>Customers which are not interested</span></div>
-        </div>
-        <div class="row">
-            <div class="col-md-1"><span class="label label-warning">INREVIEW</span></div>
-            <div class="col-md-4"><span>Customers which are again considered to be serve</span></div>
         </div>
     </section>
 </div>
