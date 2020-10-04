@@ -81,7 +81,7 @@ class Report extends BaseController{
 		$pdf = new MYPDF ( PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false );
 		
 		$pdf->SetCreator ( PDF_CREATOR );
-		$pdf->SetAuthor ( 'CodeInsect' );
+		$pdf->SetAuthor ( 'DINESHKUMMARC' );
 		$pdf->SetTitle ( "Followup Report" );
 		$pdf->SetSubject ( 'Followup Report for ' );
 	
