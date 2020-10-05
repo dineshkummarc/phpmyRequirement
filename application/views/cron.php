@@ -2,8 +2,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Cron Job List
-        <small>List of Cron Job for companies</small>
+        Cron Job List<small>List of Cron Job for companies</small>
       </h1>
     </section>
     <section class="content">
