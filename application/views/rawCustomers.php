@@ -135,7 +135,7 @@
             </div>
 		<div class="row">
             <div class="col-md-1"><span class="label label-warning">INREVIEW</span></div>
-            <div class="col-md-4"><span>Customers which are again considered to served</span></div>
+            <div class="col-md-4"><span>Customers which are again considered to be served</span></div>
         </div>
     </section>
 </div>
