@@ -1,4 +1,4 @@
-# RequirementAnalysis
+# phpmyRequirement
 Feedback system to record Requirement & feedback of customers. This is for marketing purpose.
 
 ### Project is currently under development, not ready for Production use.
