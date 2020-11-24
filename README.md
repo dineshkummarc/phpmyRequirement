@@ -68,32 +68,32 @@ Password : admin
 
 
 ## Features
-1. Login, Logout, Change Password.
-2. Create, Update, Delete Users.
-3. Import the list of customers (who are having websites) from excel sheet.
-4. Assign the customers to executives/telecaller.
-5. Record the feedbacks for customers & Timeline.
-6. Take *screenshot* (Desktop & Mobile version) of their websites within one click.
-7. Get small *SEO Report* of their website.
-8. Sending company profile/portfolio via email with pdf attachment.
-9. Record *customers requirements* and export as pdf.
-10. Generate *PDF reports for exectives/telecaller* for each day.
-11. Automatic grabbing of screen-shot if you set cron job.
-12. List of daily schedule for feedback/followup.
+- [x] Login, Logout, Change Password.
+- [x] Create, Update, Delete Users.
+- [x] Import the list of customers (who are having websites) from excel sheet.
+- [x] Assign the customers to executives/telecaller.
+- [x] Record the feedbacks for customers & Timeline.
+- [x] Take *screenshot* (Desktop & Mobile version) of their websites within one click.
+- [x] Get small *SEO Report* of their website.
+- [x] Sending company profile/portfolio via email with pdf attachment.
+- [x] Record *customers requirements* and export as pdf.
+- [x] Generate *PDF reports for exectives/telecaller* for each day.
+- [x] Automatic grabbing of screen-shot if you set cron job.
+- [x] List of daily schedule for feedback/followup.
 
 ## TODO (Remaining Features : Yet to develop)
-1. Versions of Requirements.
-2. Customer assignment history in case the executive is change.
-3. CRUD - serving companies 
-4. CRUD - portfolio and profile attachements.
-5. CRUD - HTML email templates.
-6. Report - Summary
-7. CRUD - Cron Job
-8. CRUD - Role
-9. CRUD - Packages
-10. CRUD - Feedback Types
-11. CRUD - Attachment Types
-12. Calender to list/show the Dates
-13. CRUD - Calender Configuration
-14. Show call status on calender based on Dates
-15. Call Reminder for initiating the call so that no one forgets to attend the call
+- [ ] Versions of Requirements.
+- [ ] Customer assignment history in case the executive is change.
+- [ ] CRUD - serving companies 
+- [ ] CRUD - portfolio and profile attachements.
+- [ ] CRUD - HTML email templates.
+- [ ] Report - Summary
+- [ ] CRUD - Cron Job
+- [ ] CRUD - Role
+- [ ] CRUD - Packages
+- [ ] CRUD - Feedback Types
+- [ ] CRUD - Attachment Types
+- [ ] Calender to list/show the Dates
+- [ ] CRUD - Calender Configuration
+- [ ] Show call status on calender based on Dates
+- [ ] Call Reminder for initiating the call so that no one forgets to attend the call
